@@ -1,0 +1,1 @@
+void setAdditivity(bool additive);

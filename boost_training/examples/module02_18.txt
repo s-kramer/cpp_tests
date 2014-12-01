@@ -1,0 +1,14 @@
+# Ustawienie poziomu logowania DEBUG, 2 Appender'y
+log4j.rootLogger=DEBUG, App1, App2
+# Appender App1 wyprowadza na konsolê
+log4j.appender.App1=org.apache.log4j.ConsoleAppender
+# App1 u¿ywa PatternLayout
+log4j.appender.App1.layout=org.apache.log4j.PatternLayout
+# Formatowanie dla App1
+log4j.appender.App1.layout.ConversionPattern=%-4r [%t] &-5p %c %x - %m%n
+# App2 jest plikowy
+log4j.appender.App2=org.apache.log4j.RollingFileAppender
+# Plik dla App2
+log4j.appender.App2.File=logApp2.log
+log4j.appender.App2.MaxFileSize=100KB
+log4j.appender.App2.MaxBackupIndex=2
