@@ -1,0 +1,146 @@
+\chapter{Rozwinięcie}
+ 
+ \section{Platformy sprzętowe} 
+  \label{sec:platformy_sprz_towe}
+  
+  % ToDo: rozwinąć skrót FPGA przy pierwszym wystąpieniu (skramer, Sat 24 May 2014 06:10:21 PM CEST)
+  
+  % opis zedboarda, microzeda, marsa
+  % część wspólna - zynq, opis peryferiów, jakieś krótkie dane techniczne - fpga, cpu, pamięci
+  
+  
+  % section platformy_sprz_towe (end)
+  
+ \section{Uruchamianie systemu Linux} 
+  \label{sec:uruchamianie_systemu_linux}
+  
+  Wykorzystywanym w~pracy sposobem ładowania systemu Linux było używanie programu rozruchowego \akronim{U-boot} (\english{Universal Boot Loader}). Przy jego użyciu uruchamianie systemu operacyjnego przebiega w~następujący sposób\cite{krid}:
+  \begin{enumerate}
+  	\item Procesor odczytuje z pamięci ROM adres programu rozruchowego pierwszego poziomu \akronim{FSBL} (\english{First stage boot loader})
+  	\item FSBL ładuje do pamięci i~uruchamia program rozruchowy drugiego poziomu, w~tym przypadku U-boot
+  	\item U-boot udostępnia tekstowy interfejs użytkownika umożliwiający wybór ładowanego systemu operacyjnego i modyfikację sposobu jego uruchamiania, w~tym komend przekazywanych do jądra systemu (\definicja{bootargs}). Następnie ładuje do pamięci obraz jądra i~rozpoczyna jego uruchamianie.
+  	\item Jądro systemu wczytuje system plików i~inicjalizuje system operacyjny
+  \end{enumerate}
+  
+  Uruchamianie platform sprzętowych firmy Xilinx wymaga umieszczenia specjalnego pliku \texttt{BOOT.BIN} na karcie SD używanej przy rozruchu. Plik ten zawiera programy rozruchowe pierwszego i drugiego poziomu oraz plik konfigurujący matrycę FPGA (\english{bitstream}). 
+  % Generowany jest przy użyciu programu \texttt{bootgen} wchodzącego w~skład zestawu narzędzi firmy Xilinx.
+  
+  Sam system Linux do uruchomienia wymaga obecności trzech elementów: drzewa urządzeń (\english{device-tree}), systemu plików (\definicja{root filesystem}) oraz obrazu systemu (\definicja{uImage}). Pierwszy z nich jest plikiem tekstowym zawierającym konfigurację sprzętową przedstawianą systemowi operacyjnemu. Na jego podstawie inicjalizowane są pliki systemowe odpowiadające za obsługę wszystkich komponentów platformy sprzętowej. Drugi element niezbędny przy uruchamianiu systemu Linux to system plików. Może mieć ona postać struktury plików umieszczonej na karcie pamięci lub udostępnianej przez sieć lokalną, lub archiwum rozpakowywanego do pamięci operacyjnej. Trzeci ze wspomnianych elementów to obraz jądra systemu Linux (plik \texttt{vmlinux} otrzymywany w wyniku kompilacji systemu) rozszerzony o~dodatkowe metadane opisujące adres pod który ma zostać załadowany system. 
+  % Obraz ten generowany jest przy użyciu programu \texttt{mkimage}. 
+  
+  Program rozruchowy U-boot daje możliwość ładowania komponentów niezbędnych do uruchomienia systemu Linux z wykorzystaniem pamięci NAND umieszczonej na platformie sprzętowej, przy użyciu montowanej karty pamięci, lub za pomocą protokołów działających przez sieć lokalną, np. \texttt{tftp}, \texttt{nfs}. Opcjonalnie, możliwe jest również rozszerzenie pliku \texttt{BOOT.BIN} o~wymagane przez system Linux drzewo urządzeń i~obraz systemu uImage.
+  
+  % BOOT.BIN + budowa - fsbl, uboot, bitstream, do czego służą, narzędzia do generacji
+  % komendy do bootowania w~uboocie\\
+  
+  % BOOT.BIN, wchodzące w~jego skład uboot, fsbl, bitstream, ładowanie na kartę SD
+  % dts, uImage
+  
+  % uruchamianie w~uboocie, ładowanie elementów przez nfs, tftp, eth, z karty SD
+  % ładowanie obrazu do pamięci który rozpakowuje się do entry pointa
+  
+  % section uruchamianie_systemu_linux (end)
+  
+ \section{Uruchamianie systemu Petalinux} 
+  \label{sec:uruchamianie_systemu_petalinux}
+  
+  Firma Xilinx udostępnia własną dystrybucję systemu Linux o nazwie Petalinux która umożliwia pracę w~trybie asymetrycznym\cite{petaUG}. Przygotowany system jest uruchamiany w~trybie SMP a~następnie, w~wyniku ładowania modułów rozszerzeń jądra, system przechodzi w~tryb pracy AMP uruchamiając na drugim rdzeniu procesora system operacyjny \definicja{FreeRTOS}. Komunikacja między systemami zapewniona jest dzięki modułom \texttt{RPMSG}, \texttt{Remoteproc}, oraz obszarze pamięci współdzielonej między systemami. Sama pamięć operacyjna podzielona jest w~sposób statyczny - system Linux zmodyfikowany jest w~taki sposób, aby uruchamiał się w~jednej w~wydzielonych przestrzeni pamięci, umożliwiając drugiemu systemowi pracę w~pozostałej części pamięci operacyjnej. 
+  
+  Proces kompilacji systemu Petalinux jest bardziej złożony niż systemu niezmodyfikowanego. Jego przygotowanie wymaga użycia zestawu narzędzi firmy Xilinx, m.in. programów \texttt{Xilinx Platform Studio}, \texttt{Xilinx Software Development Kit}.
+  
+  
+  przy wykorzystaniu systemu ładowania modułów jądra, jest modyfikowany. 
+  % sposób ładowania programu - wkompilowywanie w~jądro, mała elastyczność, brak możliwości zmieniania programu bez rekompilacji
+  % duża ilosć modułów
+  % skomplikowany proces tworzenia systemu
+  
+  
+  % section uruchamianie_systemu_petalinux (end)
+  
+ \section{Moduł AMP} 
+  \label{sec:modu_amp}
+  
+  % Wyciąganie źródeł petalinuxa, usuwanie niepotrzebnych elementów, 
+  %pisanie własnego modułu replikującego działanie petalinuxa
+  % Sposób uruchamiania AMP w petalinuxie (zatrzymanie CPU, reset zegara)
+  % zaimplementowany moduł AMP i~aplikacje testowe
+  
+  
+  % section modu_amp (end)
+  
+ \section{Uruchamianie programów demonstracyjnych na drugim procesorze} 
+  \label{sec:uruchamianie_program_w_demonstracyjnych_na_drugim_procesorze}
+  
+  
+  
+  % section uruchamianie_program_w_demonstracyjnych_na_drugim_procesorze (end)
+  
+  
+ \section{Uruchamianie systemu ecos} 
+  \label{sec:uruchamianie_systemu_ecos}
+  
+  % Opis ecosa
+  
+  \subsection{Uruchamianie przy pomocy programatora}
+  	\label{ssub:uruchamianie_przy_pomocy_programatora}
+  	
+  	% ładowanie przez programator Xilinxa - xmd + gdb, link do instrukcji antmicro, zdjęcie programatora, 
+  	
+  	
+  	% subsection uruchamianie_przy_pomocy_programatora (end)
+  	
+  \subsection{Uruchamianie systemu ecos przez program rozruchowy} 
+  	\label{ssub:uruchamianie_systemu_przez_program_rozruchowy}
+  	
+  	
+  	% ładowanie do pamięci przez uboota, Ładowanie przez trampolinę w~celu uruchomienia na drugim CPU
+  	
+  	% subsection uruchamianie_systemu_przez_program_rozruchowy (end)
+  	
+  	
+  	% section uruchamianie_systemu_ecos (end)
+  	
+ \section{Uruchamianie drugiego portu szeregowego} 
+  \label{sec:uruchamianie_drugiego_portu_szeregowego}
+  
+  % projekt w planaheadzie, opis architektury w~xps, dodanie uarta, modyfikacja pinów na emio, modyfikacja dts
+  % pullups?
+  % link do posta z bloga zedboarda
+  
+  % section uruchamianie_drugiego_portu_szeregowego (end)
+  
+ \section{Napotkane problemy} 
+  \label{sec:napotkane_problemy}
+  
+  \subsection{Tworzenie obrazu uImage przy wykorzystaniu kodu źródłowego Petalinux}
+  	\label{ssub:tworzenie_obrazu_uimage_przy_wykorzystaniu_kodu_r_d_owego_petalinux}
+  	
+  	petalinux kompilowany ze źródeł nie brał pod uwagę LOAD\_ADDR podawanego do kernela. Trzeba było używać dodatkowo mkimage żeby stworzyć bootowalny uImage.
+  	Modyfikacje dts - sprawdzić różnice miedzy dtsem amp i~microzeda
+  	
+  	
+  	% subsection tworzenie_obrazu_uimage_przy_wykorzystaniu_kodu_r_d_owego_petalinux (end)
+  	
+  	
+  	brak zegara GPIO podawanego do assemblerowego dema blinka. Modyfikacja w~sterowniku amp, cofnięcie, implementacja restartu szyny GPIO w~assemblerze.
+  	mapowanie pamięci rejestrów
+  	
+  	
+  	% section napotkane_problemy (end)
+  	
+  	wspomnienie platform zedboard, microzed, mars
+  	Uruchamianie linuxa amp, moduł amp, 
+  	uruchamianie petalinuxa
+  	program do ładowania elfa\textbackslash bina do pamięci
+  	uruchamianie dem ecosa, modyfikacje kernela linuxa amp, implementacja zegara GPIO w~demach ecosa?
+  	Implementacja zarządzania zasobami i~komunikacji
+  	dokumenacja - jaka?
+  	
+  	
+  	
+  	uruchamianie programów z uboota (go?)
+  	sprawdzanie i~modyfikacja pamięci \ rejestrów z uboota
+  	
+  	freeRTOS?
+  	
+  	
