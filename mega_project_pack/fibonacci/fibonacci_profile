@@ -1,0 +1,1072 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+  9.53      0.04     0.04    84000     0.00     0.00  boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::~lazy_ostream_impl()
+  9.53      0.08     0.04    46000     0.00     0.00  boost::unit_test::basic_cstring<char const>::basic_cstring()
+  9.53      0.12     0.04    42000     0.00     0.01  bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*)
+  7.14      0.15     0.03   128000     0.00     0.00  boost::unit_test::lazy_ostream::instance()
+  7.14      0.18     0.03    44000     0.00     0.00  boost::test_tools::predicate_result::~predicate_result()
+  4.76      0.20     0.02    44000     0.00     0.00  boost::shared_ptr<boost::basic_wrap_stringstream<char> >::shared_ptr()
+  4.76      0.22     0.02    44000     0.00     0.00  boost::unit_test::class_property<bool>::class_property(bool)
+  4.76      0.24     0.02                             boost::unit_test::lazy_ostream_impl<char const (&) [44]> boost::unit_test::operator<< <char [44]>(boost::unit_test::lazy_ostream const&, char const (&) [44])
+  2.38      0.25     0.01   128001     0.00     0.00  boost::unit_test::lazy_ostream::lazy_ostream(bool)
+  2.38      0.26     0.01    84000     0.00     0.00  boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&)
+  2.38      0.27     0.01    84000     0.00     0.00  boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&> boost::unit_test::operator<< <boost::test_tools::tt_detail::print_helper_t<int> >(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&)
+  2.38      0.28     0.01    44000     0.00     0.00  getNthFibonacci(int, bool)
+  2.38      0.29     0.01    44000     0.00     0.00  boost::shared_ptr<boost::basic_wrap_stringstream<char> >::~shared_ptr()
+  2.38      0.30     0.01    44000     0.00     0.00  boost::test_tools::predicate_result::predicate_result(bool)
+  2.38      0.31     0.01    42000     0.00     0.00  boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl<int, int>(int const&, int const&)
+  2.38      0.32     0.01    42000     0.00     0.00  boost::unit_test::lazy_ostream_impl<char const (&) [1]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [1])
+  2.38      0.33     0.01    42000     0.00     0.00  boost::unit_test::lazy_ostream_impl<char const (&) [1]>::~lazy_ostream_impl()
+  2.38      0.34     0.01    42000     0.00     0.00  boost::unit_test::lazy_ostream_impl<char const (&) [1]> boost::unit_test::operator<< <char [1]>(boost::unit_test::lazy_ostream const&, char const (&) [1])
+  2.38      0.35     0.01    42000     0.00     0.00  boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::call_impl<int, int>(int const&, int const&, mpl_::bool_<false>) const
+  2.38      0.36     0.01    42000     0.00     0.00  boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::operator()<int, int>(int const&, int const&) const
+  2.38      0.37     0.01    20000     0.00     0.00  countNthFibonacci(int)
+  2.38      0.38     0.01    20000     0.00     0.00  getCachedNthFibonacci(unsigned int)
+  2.38      0.39     0.01       68     0.15     0.15  std::move_iterator<unsigned int*>::base() const
+  2.38      0.40     0.01        2     5.00     5.00  boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::shared_ptr<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*)
+  2.38      0.41     0.01        1    10.00   195.04  fibonacci_numbers_generation_cached::test_method()
+  2.38      0.42     0.01        1    10.00   195.04  fibonacci_numbers_generation_recalculated::test_method()
+  0.00      0.42     0.00   128000     0.00     0.00  boost::unit_test::lazy_ostream::~lazy_ostream()
+  0.00      0.42     0.00    90001     0.00     0.00  boost::unit_test::basic_cstring<char const>::basic_cstring(char const*, unsigned long)
+  0.00      0.42     0.00    84000     0.00     0.00  boost::test_tools::tt_detail::print_helper_t<int> boost::test_tools::tt_detail::print_helper<int>(int const&)
+  0.00      0.42     0.00    84000     0.00     0.00  boost::test_tools::tt_detail::print_helper_t<int>::print_helper_t(int const&)
+  0.00      0.42     0.00    46000     0.00     0.00  boost::unit_test::basic_cstring<char const>::null_str()
+  0.00      0.42     0.00    44004     0.00     0.00  boost::detail::shared_count::~shared_count()
+  0.00      0.42     0.00    44002     0.00     0.00  boost::detail::shared_count::shared_count()
+  0.00      0.42     0.00    44000     0.00     0.00  boost::test_tools::predicate_result::readonly_property62::readonly_property62(bool)
+  0.00      0.42     0.00    44000     0.00     0.00  boost::unit_test::readonly_property<bool>::readonly_property(bool)
+  0.00      0.42     0.00    20020     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::size() const
+  0.00      0.42     0.00    20000     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long)
+  0.00      0.42     0.00     2000     0.00     0.00  boost::unit_test::lazy_ostream_impl<char const (&) [42]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [42])
+  0.00      0.42     0.00     2000     0.00     0.00  boost::unit_test::lazy_ostream_impl<char const (&) [42]>::~lazy_ostream_impl()
+  0.00      0.42     0.00     2000     0.00     0.00  void boost::unit_test::ut_detail::ignore_unused_variable_warning<std::invalid_argument>(std::invalid_argument const&)
+  0.00      0.42     0.00     2000     0.00     0.00  boost::unit_test::lazy_ostream_impl<char const (&) [42]> boost::unit_test::operator<< <char [42]>(boost::unit_test::lazy_ostream const&, char const (&) [42])
+  0.00      0.42     0.00      106     0.00     0.00  unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&)
+  0.00      0.42     0.00       90     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&)
+  0.00      0.42     0.00       82     0.00     0.00  boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::eq(char, char)
+  0.00      0.42     0.00       72     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const
+  0.00      0.42     0.00       66     0.00     0.00  std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&)
+  0.00      0.42     0.00       36     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++()
+  0.00      0.42     0.00       36     0.00     0.00  bool __gnu_cxx::operator!=<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&)
+  0.00      0.42     0.00       36     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const
+  0.00      0.42     0.00       36     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long) const
+  0.00      0.42     0.00       34     0.00     0.29  bool std::operator==<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&)
+  0.00      0.42     0.00       34     0.00     0.29  bool std::operator!=<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&)
+  0.00      0.42     0.00       32     0.00     0.00  unsigned int* std::__addressof<unsigned int>(unsigned int&)
+  0.00      0.42     0.00       31     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::max_size() const
+  0.00      0.42     0.00       30     0.00     0.00  std::move_iterator<unsigned int*>::operator*() const
+  0.00      0.42     0.00       30     0.00     0.00  std::move_iterator<unsigned int*>::operator++()
+  0.00      0.42     0.00       30     0.00     0.00  void std::_Construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&)
+  0.00      0.42     0.00       26     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const
+  0.00      0.42     0.00       26     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const
+  0.00      0.42     0.00       26     0.00     0.00  unsigned long std::allocator_traits<std::allocator<unsigned int> >::_S_max_size<std::allocator<unsigned int> const, void>(std::allocator<unsigned int> const&, int)
+  0.00      0.42     0.00       26     0.00     0.00  std::allocator_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&)
+  0.00      0.42     0.00       18     0.00     0.00  void __gnu_cxx::new_allocator<unsigned int>::construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&)
+  0.00      0.42     0.00       18     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long) const
+  0.00      0.42     0.00       18     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::cend() const
+  0.00      0.42     0.00       18     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::cbegin() const
+  0.00      0.42     0.00       18     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const
+  0.00      0.42     0.00       18     0.00     0.00  _ZNSt16allocator_traitsISaIjEE12_S_constructIjJjEEENSt9enable_ifIXsr6__and_INS1_18__construct_helperIT_JDpT0_EE4typeEEE5valueEvE4typeERS0_PS5_DpOS6_
+  0.00      0.42     0.00       18     0.00     0.00  _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_
+  0.00      0.42     0.00       18     0.00     0.00  std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::back_insert_iterator(std::vector<unsigned int, std::allocator<unsigned int> >&)
+  0.00      0.42     0.00       18     0.00     0.56  std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator=(unsigned int&&)
+  0.00      0.42     0.00       18     0.00     0.00  std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator*()
+  0.00      0.42     0.00       18     0.00     0.00  std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator++()
+  0.00      0.42     0.00       18     0.00     0.56  void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&)
+  0.00      0.42     0.00       18     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned long)
+  0.00      0.42     0.00       18     0.00     0.56  std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int&&)
+  0.00      0.42     0.00       18     0.00     0.00  std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > > std::back_inserter<std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >&)
+  0.00      0.42     0.00       10     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator()
+  0.00      0.42     0.00        8     0.00     0.00  std::move_iterator<unsigned int*>::move_iterator(unsigned int*)
+  0.00      0.42     0.00        8     0.00     0.00  std::move_iterator<unsigned int*> std::__make_move_if_noexcept_iterator<unsigned int*, std::move_iterator<unsigned int*> >(unsigned int*)
+  0.00      0.42     0.00        5     0.00     0.00  boost::unit_test::basic_cstring<char const>::begin()
+  0.00      0.42     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long)
+  0.00      0.42     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*)
+  0.00      0.42     0.00        5     0.00     0.00  void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*)
+  0.00      0.42     0.00        5     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long)
+  0.00      0.42     0.00        5     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long)
+  0.00      0.42     0.00        5     0.00     0.00  std::allocator_traits<std::allocator<unsigned int> >::deallocate(std::allocator<unsigned int>&, unsigned int*, unsigned long)
+  0.00      0.42     0.00        5     0.00     0.00  std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long)
+  0.00      0.42     0.00        5     0.00     0.00  void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*)
+  0.00      0.42     0.00        5     0.00     0.00  void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.42     0.00        4     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.42     0.00        4     0.00     2.50  unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*)
+  0.00      0.42     0.00        4     0.00     2.50  void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&)
+  0.00      0.42     0.00        4     0.00     2.50  unsigned int* std::uninitialized_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*)
+  0.00      0.42     0.00        4     0.00     2.50  unsigned int* std::__uninitialized_copy_a<std::move_iterator<unsigned int*>, unsigned int*, unsigned int>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.42     0.00        4     0.00     2.50  unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.42     0.00        4     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.42     0.00        4     0.00     0.00  operator delete(void*, unsigned long)
+  0.00      0.42     0.00        3     0.00     0.00  boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::length(char const*)
+  0.00      0.42     0.00        3     0.00     0.00  boost::unit_test::basic_cstring<char const>::size() const
+  0.00      0.42     0.00        2     0.00     0.00  boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::~shared_ptr()
+  0.00      0.42     0.00        2     0.00     0.00  void boost::checked_delete<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*)
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::shared_count::swap(boost::detail::shared_count&)
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::shared_count::shared_count<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*)
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::sp_counted_base::release()
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::sp_counted_base::sp_counted_base()
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::sp_counted_base::~sp_counted_base()
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::sp_counted_impl_p(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*)
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::~sp_counted_impl_p()
+  0.00      0.42     0.00        2     0.00     0.00  void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&)
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::atomic_exchange_and_add(int*, int)
+  0.00      0.42     0.00        2     0.00     0.00  boost::detail::sp_enable_shared_from_this(...)
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::basic_cstring<char const>::end()
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::basic_cstring<char const>::basic_cstring(std::string const&)
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::callback0_impl()
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::~callback0_impl()
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::callback0_impl_t(void (*)())
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t()
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t()
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::find(char const*, unsigned long, char)
+  0.00      0.42     0.00        2     0.00   195.04  boost::unit_test::ut_detail::unused boost::unit_test::ut_detail::invoker<boost::unit_test::ut_detail::unused>::invoke<void (*)()>(void (*&)())
+  0.00      0.42     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::~new_allocator()
+  0.00      0.42     0.00        2     0.00     0.00  boost::unit_test::basic_cstring<char const>::is_empty() const
+  0.00      0.42     0.00        2     0.00     0.00  std::initializer_list<unsigned int>::begin() const
+  0.00      0.42     0.00        2     0.00     0.00  std::allocator<unsigned int>::~allocator()
+  0.00      0.42     0.00        2     0.00     0.00  void std::_Construct<unsigned int, unsigned int const&>(unsigned int*, unsigned int const&)
+  0.00      0.42     0.00        2     0.00     0.00  unsigned int const& std::forward<unsigned int const&>(std::remove_reference<unsigned int const&>::type&)
+  0.00      0.42     0.00        1     0.00   195.04  fibonacci_numbers_generation_cached_invoker()
+  0.00      0.42     0.00        1     0.00   195.04  fibonacci_numbers_generation_recalculated_invoker()
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::basic_cstring<char const>::trim_right(char const*)
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>)
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::basic_cstring<char const>::trim(boost::unit_test::basic_cstring<char const>)
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::basic_cstring<char const>::trim_left(char const*)
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>)
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::basic_cstring<char const>::basic_cstring(char const*)
+  0.00      0.42     0.00        1     0.00     0.00  void boost::unit_test::assign_op<char, char const>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, boost::unit_test::basic_cstring<char const>, int)
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_cached_id>::auto_tc_exp_fail()
+  0.00      0.42     0.00        1     0.00     0.00  boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_recalculated_id>::auto_tc_exp_fail()
+  0.00      0.42     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::new_allocator(__gnu_cxx::new_allocator<unsigned int> const&)
+  0.00      0.42     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::new_allocator()
+  0.00      0.42     0.00        1     0.00     0.00  std::initializer_list<unsigned int>::end() const
+  0.00      0.42     0.00        1     0.00     0.00  std::initializer_list<unsigned int>::size() const
+  0.00      0.42     0.00        1     0.00     0.00  std::allocator<unsigned int>::allocator(std::allocator<unsigned int> const&)
+  0.00      0.42     0.00        1     0.00     0.00  std::allocator<unsigned int>::allocator()
+  0.00      0.42     0.00        1     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl(std::allocator<unsigned int> const&)
+  0.00      0.42     0.00        1     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.42     0.00        1     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(std::allocator<unsigned int> const&)
+  0.00      0.42     0.00        1     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base()
+  0.00      0.42     0.00        1     0.00     0.00  unsigned int* std::__uninitialized_copy<false>::__uninit_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*)
+  0.00      0.42     0.00        1     0.00     0.00  void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag)
+  0.00      0.42     0.00        1     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&)
+  0.00      0.42     0.00        1     0.00     0.00  std::iterator_traits<unsigned int const*>::difference_type std::__distance<unsigned int const*>(unsigned int const*, unsigned int const*, std::random_access_iterator_tag)
+  0.00      0.42     0.00        1     0.00     0.00  unsigned int* std::uninitialized_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*)
+  0.00      0.42     0.00        1     0.00     0.00  std::iterator_traits<unsigned int const*>::iterator_category std::__iterator_category<unsigned int const*>(unsigned int const* const&)
+  0.00      0.42     0.00        1     0.00     0.00  unsigned int* std::__uninitialized_copy_a<unsigned int const*, unsigned int*, unsigned int>(unsigned int const*, unsigned int const*, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.42     0.00        1     0.00     0.00  std::iterator_traits<unsigned int const*>::difference_type std::distance<unsigned int const*>(unsigned int const*, unsigned int const*)
+  0.00      0.42     0.00        1     0.00     0.00  __cxx_global_var_init47
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 2.38% of 0.42 seconds
+
+index % time    self  children    called     name
+                0.00    0.39       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::invoke() [2]
+[1]     92.9    0.00    0.39       2         boost::unit_test::ut_detail::unused boost::unit_test::ut_detail::invoker<boost::unit_test::ut_detail::unused>::invoke<void (*)()>(void (*&)()) [1]
+                0.00    0.20       1/1           fibonacci_numbers_generation_recalculated_invoker() [5]
+                0.00    0.20       1/1           fibonacci_numbers_generation_cached_invoker() [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     92.9    0.00    0.39                 boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::invoke() [2]
+                0.00    0.39       2/2           boost::unit_test::ut_detail::unused boost::unit_test::ut_detail::invoker<boost::unit_test::ut_detail::unused>::invoke<void (*)()>(void (*&)()) [1]
+-----------------------------------------------
+                0.02    0.10   21000/42000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.02    0.10   21000/42000       fibonacci_numbers_generation_recalculated::test_method() [7]
+[3]     57.7    0.04    0.20   42000         bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+                0.01    0.07   42000/42000       boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::operator()<int, int>(int const&, int const&) const [8]
+                0.04    0.00   84000/84000       boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::~lazy_ostream_impl() [12]
+                0.03    0.01   42000/44000       boost::test_tools::predicate_result::~predicate_result() [15]
+                0.01    0.02   84000/84000       boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&> boost::unit_test::operator<< <boost::test_tools::tt_detail::print_helper_t<int> >(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [17]
+                0.02    0.00   84000/128000      boost::unit_test::lazy_ostream::instance() [16]
+                0.00    0.00   84000/84000       boost::test_tools::tt_detail::print_helper_t<int> boost::test_tools::tt_detail::print_helper<int>(int const&) [55]
+-----------------------------------------------
+                0.00    0.20       1/1           boost::unit_test::ut_detail::unused boost::unit_test::ut_detail::invoker<boost::unit_test::ut_detail::unused>::invoke<void (*)()>(void (*&)()) [1]
+[4]     46.4    0.00    0.20       1         fibonacci_numbers_generation_cached_invoker() [4]
+                0.01    0.19       1/1           fibonacci_numbers_generation_cached::test_method() [6]
+-----------------------------------------------
+                0.00    0.20       1/1           boost::unit_test::ut_detail::unused boost::unit_test::ut_detail::invoker<boost::unit_test::ut_detail::unused>::invoke<void (*)()>(void (*&)()) [1]
+[5]     46.4    0.00    0.20       1         fibonacci_numbers_generation_recalculated_invoker() [5]
+                0.01    0.19       1/1           fibonacci_numbers_generation_recalculated::test_method() [7]
+-----------------------------------------------
+                0.01    0.19       1/1           fibonacci_numbers_generation_cached_invoker() [4]
+[6]     46.4    0.01    0.19       1         fibonacci_numbers_generation_cached::test_method() [6]
+                0.02    0.10   21000/42000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+                0.02    0.00   23000/46000       boost::unit_test::basic_cstring<char const>::basic_cstring() [13]
+                0.01    0.02   22000/44000       getNthFibonacci(int, bool) [14]
+                0.01    0.01   21000/42000       boost::unit_test::lazy_ostream_impl<char const (&) [1]> boost::unit_test::operator<< <char [1]>(boost::unit_test::lazy_ostream const&, char const (&) [1]) [18]
+                0.01    0.00   22000/128000      boost::unit_test::lazy_ostream::instance() [16]
+                0.01    0.00   21000/42000       boost::unit_test::lazy_ostream_impl<char const (&) [1]>::~lazy_ostream_impl() [29]
+                0.00    0.00    1000/44000       boost::test_tools::predicate_result::predicate_result(bool) [11]
+                0.00    0.00    1000/44000       boost::test_tools::predicate_result::~predicate_result() [15]
+                0.00    0.00    1000/2000        boost::unit_test::lazy_ostream_impl<char const (&) [42]> boost::unit_test::operator<< <char [42]>(boost::unit_test::lazy_ostream const&, char const (&) [42]) [45]
+                0.00    0.00   45000/90001       boost::unit_test::basic_cstring<char const>::basic_cstring(char const*, unsigned long) [54]
+                0.00    0.00    1000/2000        void boost::unit_test::ut_detail::ignore_unused_variable_warning<std::invalid_argument>(std::invalid_argument const&) [63]
+                0.00    0.00    1000/2000        boost::unit_test::lazy_ostream_impl<char const (&) [42]>::~lazy_ostream_impl() [62]
+-----------------------------------------------
+                0.01    0.19       1/1           fibonacci_numbers_generation_recalculated_invoker() [5]
+[7]     46.4    0.01    0.19       1         fibonacci_numbers_generation_recalculated::test_method() [7]
+                0.02    0.10   21000/42000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+                0.02    0.00   23000/46000       boost::unit_test::basic_cstring<char const>::basic_cstring() [13]
+                0.01    0.02   22000/44000       getNthFibonacci(int, bool) [14]
+                0.01    0.01   21000/42000       boost::unit_test::lazy_ostream_impl<char const (&) [1]> boost::unit_test::operator<< <char [1]>(boost::unit_test::lazy_ostream const&, char const (&) [1]) [18]
+                0.01    0.00   22000/128000      boost::unit_test::lazy_ostream::instance() [16]
+                0.01    0.00   21000/42000       boost::unit_test::lazy_ostream_impl<char const (&) [1]>::~lazy_ostream_impl() [29]
+                0.00    0.00    1000/44000       boost::test_tools::predicate_result::predicate_result(bool) [11]
+                0.00    0.00    1000/44000       boost::test_tools::predicate_result::~predicate_result() [15]
+                0.00    0.00    1000/2000        boost::unit_test::lazy_ostream_impl<char const (&) [42]> boost::unit_test::operator<< <char [42]>(boost::unit_test::lazy_ostream const&, char const (&) [42]) [45]
+                0.00    0.00   45000/90001       boost::unit_test::basic_cstring<char const>::basic_cstring(char const*, unsigned long) [54]
+                0.00    0.00    1000/2000        void boost::unit_test::ut_detail::ignore_unused_variable_warning<std::invalid_argument>(std::invalid_argument const&) [63]
+                0.00    0.00    1000/2000        boost::unit_test::lazy_ostream_impl<char const (&) [42]>::~lazy_ostream_impl() [62]
+-----------------------------------------------
+                0.01    0.07   42000/42000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+[8]     18.5    0.01    0.07   42000         boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::operator()<int, int>(int const&, int const&) const [8]
+                0.01    0.06   42000/42000       boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::call_impl<int, int>(int const&, int const&, mpl_::bool_<false>) const [9]
+-----------------------------------------------
+                0.01    0.06   42000/42000       boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::operator()<int, int>(int const&, int const&) const [8]
+[9]     16.1    0.01    0.06   42000         boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::call_impl<int, int>(int const&, int const&, mpl_::bool_<false>) const [9]
+                0.01    0.05   42000/42000       boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl<int, int>(int const&, int const&) [10]
+-----------------------------------------------
+                0.01    0.05   42000/42000       boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::call_impl<int, int>(int const&, int const&, mpl_::bool_<false>) const [9]
+[10]    13.7    0.01    0.05   42000         boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl<int, int>(int const&, int const&) [10]
+                0.01    0.04   42000/44000       boost::test_tools::predicate_result::predicate_result(bool) [11]
+-----------------------------------------------
+                0.00    0.00    1000/44000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.00    0.00    1000/44000       fibonacci_numbers_generation_recalculated::test_method() [7]
+                0.01    0.04   42000/44000       boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl<int, int>(int const&, int const&) [10]
+[11]    11.9    0.01    0.04   44000         boost::test_tools::predicate_result::predicate_result(bool) [11]
+                0.00    0.02   44000/44000       boost::test_tools::predicate_result::readonly_property62::readonly_property62(bool) [20]
+                0.02    0.00   44000/44000       boost::shared_ptr<boost::basic_wrap_stringstream<char> >::shared_ptr() [19]
+-----------------------------------------------
+                0.04    0.00   84000/84000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+[12]     9.5    0.04    0.00   84000         boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::~lazy_ostream_impl() [12]
+                0.00    0.00   84000/128000      boost::unit_test::lazy_ostream::~lazy_ostream() [53]
+-----------------------------------------------
+                0.02    0.00   23000/46000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.02    0.00   23000/46000       fibonacci_numbers_generation_recalculated::test_method() [7]
+[13]     9.5    0.04    0.00   46000         boost::unit_test::basic_cstring<char const>::basic_cstring() [13]
+                0.00    0.00   46000/46000       boost::unit_test::basic_cstring<char const>::null_str() [57]
+-----------------------------------------------
+                0.01    0.02   22000/44000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.01    0.02   22000/44000       fibonacci_numbers_generation_recalculated::test_method() [7]
+[14]     9.5    0.01    0.03   44000         getNthFibonacci(int, bool) [14]
+                0.01    0.01   20000/20000       getCachedNthFibonacci(unsigned int) [23]
+                0.01    0.00   20000/20000       countNthFibonacci(int) [30]
+-----------------------------------------------
+                0.00    0.00    1000/44000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.00    0.00    1000/44000       fibonacci_numbers_generation_recalculated::test_method() [7]
+                0.03    0.01   42000/44000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+[15]     9.5    0.03    0.01   44000         boost::test_tools::predicate_result::~predicate_result() [15]
+                0.01    0.00   44000/44000       boost::shared_ptr<boost::basic_wrap_stringstream<char> >::~shared_ptr() [28]
+-----------------------------------------------
+                0.01    0.00   22000/128000      fibonacci_numbers_generation_cached::test_method() [6]
+                0.01    0.00   22000/128000      fibonacci_numbers_generation_recalculated::test_method() [7]
+                0.02    0.00   84000/128000      bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+[16]     7.1    0.03    0.00  128000         boost::unit_test::lazy_ostream::instance() [16]
+                0.00    0.00       1/128001      boost::unit_test::lazy_ostream::lazy_ostream(bool) [27]
+-----------------------------------------------
+                0.01    0.02   84000/84000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+[17]     6.3    0.01    0.02   84000         boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&> boost::unit_test::operator<< <boost::test_tools::tt_detail::print_helper_t<int> >(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [17]
+                0.01    0.01   84000/84000       boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [25]
+-----------------------------------------------
+                0.01    0.01   21000/42000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.01    0.01   21000/42000       fibonacci_numbers_generation_recalculated::test_method() [7]
+[18]     5.5    0.01    0.01   42000         boost::unit_test::lazy_ostream_impl<char const (&) [1]> boost::unit_test::operator<< <char [1]>(boost::unit_test::lazy_ostream const&, char const (&) [1]) [18]
+                0.01    0.00   42000/42000       boost::unit_test::lazy_ostream_impl<char const (&) [1]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [1]) [26]
+-----------------------------------------------
+                0.02    0.00   44000/44000       boost::test_tools::predicate_result::predicate_result(bool) [11]
+[19]     4.8    0.02    0.00   44000         boost::shared_ptr<boost::basic_wrap_stringstream<char> >::shared_ptr() [19]
+                0.00    0.00   44000/44002       boost::detail::shared_count::shared_count() [59]
+-----------------------------------------------
+                0.00    0.02   44000/44000       boost::test_tools::predicate_result::predicate_result(bool) [11]
+[20]     4.8    0.00    0.02   44000         boost::test_tools::predicate_result::readonly_property62::readonly_property62(bool) [20]
+                0.00    0.02   44000/44000       boost::unit_test::readonly_property<bool>::readonly_property(bool) [22]
+-----------------------------------------------
+                0.02    0.00   44000/44000       boost::unit_test::readonly_property<bool>::readonly_property(bool) [22]
+[21]     4.8    0.02    0.00   44000         boost::unit_test::class_property<bool>::class_property(bool) [21]
+-----------------------------------------------
+                0.00    0.02   44000/44000       boost::test_tools::predicate_result::readonly_property62::readonly_property62(bool) [20]
+[22]     4.8    0.00    0.02   44000         boost::unit_test::readonly_property<bool>::readonly_property(bool) [22]
+                0.02    0.00   44000/44000       boost::unit_test::class_property<bool>::class_property(bool) [21]
+-----------------------------------------------
+                                  36             getCachedNthFibonacci(unsigned int) [23]
+                0.01    0.01   20000/20000       getNthFibonacci(int, bool) [14]
+[23]     4.8    0.01    0.01   20000+36      getCachedNthFibonacci(unsigned int) [23]
+                0.00    0.01      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator=(unsigned int&&) [34]
+                0.00    0.00   20000/20020       std::vector<unsigned int, std::allocator<unsigned int> >::size() const [60]
+                0.00    0.00   20000/20000       std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [61]
+                0.00    0.00      36/36          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long) const [72]
+                0.00    0.00      36/36          bool __gnu_cxx::operator!=<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [70]
+                0.00    0.00      36/36          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [71]
+                0.00    0.00      36/36          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [69]
+                0.00    0.00      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned long) [92]
+                0.00    0.00      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::cend() const [84]
+                0.00    0.00      18/18          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long) const [83]
+                0.00    0.00      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::cbegin() const [85]
+                0.00    0.00      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > > std::back_inserter<std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >&) [93]
+                0.00    0.00      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() [90]
+                0.00    0.00      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [91]
+                0.00    0.00       1/1           std::allocator<unsigned int>::allocator() [152]
+                0.00    0.00       1/1           std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&) [159]
+                0.00    0.00       1/2           std::allocator<unsigned int>::~allocator() [135]
+                                  36             getCachedNthFibonacci(unsigned int) [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     4.8    0.02    0.00                 boost::unit_test::lazy_ostream_impl<char const (&) [44]> boost::unit_test::operator<< <char [44]>(boost::unit_test::lazy_ostream const&, char const (&) [44]) [24]
+-----------------------------------------------
+                0.01    0.01   84000/84000       boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&> boost::unit_test::operator<< <boost::test_tools::tt_detail::print_helper_t<int> >(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [17]
+[25]     3.9    0.01    0.01   84000         boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [25]
+                0.01    0.00   84000/128001      boost::unit_test::lazy_ostream::lazy_ostream(bool) [27]
+-----------------------------------------------
+                0.01    0.00   42000/42000       boost::unit_test::lazy_ostream_impl<char const (&) [1]> boost::unit_test::operator<< <char [1]>(boost::unit_test::lazy_ostream const&, char const (&) [1]) [18]
+[26]     3.2    0.01    0.00   42000         boost::unit_test::lazy_ostream_impl<char const (&) [1]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [1]) [26]
+                0.00    0.00   42000/128001      boost::unit_test::lazy_ostream::lazy_ostream(bool) [27]
+-----------------------------------------------
+                0.00    0.00       1/128001      boost::unit_test::lazy_ostream::instance() [16]
+                0.00    0.00    2000/128001      boost::unit_test::lazy_ostream_impl<char const (&) [42]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [42]) [44]
+                0.00    0.00   42000/128001      boost::unit_test::lazy_ostream_impl<char const (&) [1]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [1]) [26]
+                0.01    0.00   84000/128001      boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [25]
+[27]     2.4    0.01    0.00  128001         boost::unit_test::lazy_ostream::lazy_ostream(bool) [27]
+-----------------------------------------------
+                0.01    0.00   44000/44000       boost::test_tools::predicate_result::~predicate_result() [15]
+[28]     2.4    0.01    0.00   44000         boost::shared_ptr<boost::basic_wrap_stringstream<char> >::~shared_ptr() [28]
+                0.00    0.00   44000/44004       boost::detail::shared_count::~shared_count() [58]
+-----------------------------------------------
+                0.01    0.00   21000/42000       fibonacci_numbers_generation_cached::test_method() [6]
+                0.01    0.00   21000/42000       fibonacci_numbers_generation_recalculated::test_method() [7]
+[29]     2.4    0.01    0.00   42000         boost::unit_test::lazy_ostream_impl<char const (&) [1]>::~lazy_ostream_impl() [29]
+                0.00    0.00   42000/128000      boost::unit_test::lazy_ostream::~lazy_ostream() [53]
+-----------------------------------------------
+                0.01    0.00   20000/20000       getNthFibonacci(int, bool) [14]
+[30]     2.4    0.01    0.00   20000         countNthFibonacci(int) [30]
+-----------------------------------------------
+                0.01    0.00      68/68          bool std::operator==<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&) [32]
+[31]     2.4    0.01    0.00      68         std::move_iterator<unsigned int*>::base() const [31]
+-----------------------------------------------
+                0.00    0.01      34/34          bool std::operator!=<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&) [33]
+[32]     2.4    0.00    0.01      34         bool std::operator==<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&) [32]
+                0.01    0.00      68/68          std::move_iterator<unsigned int*>::base() const [31]
+-----------------------------------------------
+                0.00    0.01      34/34          unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+[33]     2.4    0.00    0.01      34         bool std::operator!=<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&) [33]
+                0.00    0.01      34/34          bool std::operator==<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&) [32]
+-----------------------------------------------
+                0.00    0.01      18/18          getCachedNthFibonacci(unsigned int) [23]
+[34]     2.4    0.00    0.01      18         std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator=(unsigned int&&) [34]
+                0.00    0.01      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int&&) [36]
+                0.00    0.00      18/66          std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&) [68]
+-----------------------------------------------
+                0.00    0.01      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int&&) [36]
+[35]     2.4    0.00    0.01      18         void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&) [35]
+                0.00    0.01       4/4           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+                0.00    0.00      18/106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+                0.00    0.00      14/18          _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_ [88]
+-----------------------------------------------
+                0.00    0.01      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator=(unsigned int&&) [34]
+[36]     2.4    0.00    0.01      18         std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int&&) [36]
+                0.00    0.01      18/18          void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&) [35]
+                0.00    0.00      18/66          std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&) [68]
+-----------------------------------------------
+                0.00    0.01       4/4           unsigned int* std::uninitialized_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [39]
+[37]     2.4    0.00    0.01       4         unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+                0.00    0.01      34/34          bool std::operator!=<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&) [33]
+                0.00    0.00      30/32          unsigned int* std::__addressof<unsigned int>(unsigned int&) [73]
+                0.00    0.00      30/30          std::move_iterator<unsigned int*>::operator*() const [75]
+                0.00    0.00      30/30          void std::_Construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [77]
+                0.00    0.00      30/30          std::move_iterator<unsigned int*>::operator++() [76]
+-----------------------------------------------
+                0.00    0.01       4/4           void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&) [35]
+[38]     2.4    0.00    0.01       4         void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+                0.00    0.01       4/4           unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [41]
+                0.00    0.00       8/10          std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [94]
+                0.00    0.00       4/4           std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [107]
+                0.00    0.00       4/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [101]
+                0.00    0.00       4/20020       std::vector<unsigned int, std::allocator<unsigned int> >::size() const [60]
+                0.00    0.00       4/106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+                0.00    0.00       4/18          _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_ [88]
+                0.00    0.00       4/5           void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [106]
+                0.00    0.00       4/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [102]
+-----------------------------------------------
+                0.00    0.01       4/4           unsigned int* std::__uninitialized_copy_a<std::move_iterator<unsigned int*>, unsigned int*, unsigned int>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*, std::allocator<unsigned int>&) [40]
+[39]     2.4    0.00    0.01       4         unsigned int* std::uninitialized_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [39]
+                0.00    0.01       4/4           unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+-----------------------------------------------
+                0.00    0.01       4/4           unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [41]
+[40]     2.4    0.00    0.01       4         unsigned int* std::__uninitialized_copy_a<std::move_iterator<unsigned int*>, unsigned int*, unsigned int>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*, std::allocator<unsigned int>&) [40]
+                0.00    0.01       4/4           unsigned int* std::uninitialized_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [39]
+-----------------------------------------------
+                0.00    0.01       4/4           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+[41]     2.4    0.00    0.01       4         unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [41]
+                0.00    0.01       4/4           unsigned int* std::__uninitialized_copy_a<std::move_iterator<unsigned int*>, unsigned int*, unsigned int>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*, std::allocator<unsigned int>&) [40]
+                0.00    0.00       8/8           std::move_iterator<unsigned int*> std::__make_move_if_noexcept_iterator<unsigned int*, std::move_iterator<unsigned int*> >(unsigned int*) [96]
+-----------------------------------------------
+                0.01    0.00       2/2           boost::unit_test::callback0<boost::unit_test::ut_detail::unused>::callback0<void (*)()>(void (*)()) [43]
+[42]     2.4    0.01    0.00       2         boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::shared_ptr<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [42]
+                0.00    0.00       2/44002       boost::detail::shared_count::shared_count() [59]
+                0.00    0.00       2/2           void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [121]
+-----------------------------------------------
+                                                 <spontaneous>
+[43]     2.4    0.00    0.01                 boost::unit_test::callback0<boost::unit_test::ut_detail::unused>::callback0<void (*)()>(void (*)()) [43]
+                0.01    0.00       2/2           boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::shared_ptr<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [42]
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::callback0_impl_t(void (*)()) [128]
+-----------------------------------------------
+                0.00    0.00    2000/2000        boost::unit_test::lazy_ostream_impl<char const (&) [42]> boost::unit_test::operator<< <char [42]>(boost::unit_test::lazy_ostream const&, char const (&) [42]) [45]
+[44]     0.0    0.00    0.00    2000         boost::unit_test::lazy_ostream_impl<char const (&) [42]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [42]) [44]
+                0.00    0.00    2000/128001      boost::unit_test::lazy_ostream::lazy_ostream(bool) [27]
+-----------------------------------------------
+                0.00    0.00    1000/2000        fibonacci_numbers_generation_cached::test_method() [6]
+                0.00    0.00    1000/2000        fibonacci_numbers_generation_recalculated::test_method() [7]
+[45]     0.0    0.00    0.00    2000         boost::unit_test::lazy_ostream_impl<char const (&) [42]> boost::unit_test::operator<< <char [42]>(boost::unit_test::lazy_ostream const&, char const (&) [42]) [45]
+                0.00    0.00    2000/2000        boost::unit_test::lazy_ostream_impl<char const (&) [42]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [42]) [44]
+-----------------------------------------------
+                0.00    0.00    2000/128000      boost::unit_test::lazy_ostream_impl<char const (&) [42]>::~lazy_ostream_impl() [62]
+                0.00    0.00   42000/128000      boost::unit_test::lazy_ostream_impl<char const (&) [1]>::~lazy_ostream_impl() [29]
+                0.00    0.00   84000/128000      boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::~lazy_ostream_impl() [12]
+[53]     0.0    0.00    0.00  128000         boost::unit_test::lazy_ostream::~lazy_ostream() [53]
+-----------------------------------------------
+                0.00    0.00       1/90001       init_unit_test() [166]
+                0.00    0.00   45000/90001       fibonacci_numbers_generation_cached::test_method() [6]
+                0.00    0.00   45000/90001       fibonacci_numbers_generation_recalculated::test_method() [7]
+[54]     0.0    0.00    0.00   90001         boost::unit_test::basic_cstring<char const>::basic_cstring(char const*, unsigned long) [54]
+-----------------------------------------------
+                0.00    0.00   84000/84000       bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [3]
+[55]     0.0    0.00    0.00   84000         boost::test_tools::tt_detail::print_helper_t<int> boost::test_tools::tt_detail::print_helper<int>(int const&) [55]
+                0.00    0.00   84000/84000       boost::test_tools::tt_detail::print_helper_t<int>::print_helper_t(int const&) [56]
+-----------------------------------------------
+                0.00    0.00   84000/84000       boost::test_tools::tt_detail::print_helper_t<int> boost::test_tools::tt_detail::print_helper<int>(int const&) [55]
+[56]     0.0    0.00    0.00   84000         boost::test_tools::tt_detail::print_helper_t<int>::print_helper_t(int const&) [56]
+-----------------------------------------------
+                0.00    0.00   46000/46000       boost::unit_test::basic_cstring<char const>::basic_cstring() [13]
+[57]     0.0    0.00    0.00   46000         boost::unit_test::basic_cstring<char const>::null_str() [57]
+-----------------------------------------------
+                0.00    0.00       2/44004       void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [121]
+                0.00    0.00       2/44004       boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::~shared_ptr() [112]
+                0.00    0.00   44000/44004       boost::shared_ptr<boost::basic_wrap_stringstream<char> >::~shared_ptr() [28]
+[58]     0.0    0.00    0.00   44004         boost::detail::shared_count::~shared_count() [58]
+                0.00    0.00       2/2           boost::detail::sp_counted_base::release() [116]
+-----------------------------------------------
+                0.00    0.00       2/44002       boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::shared_ptr<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [42]
+                0.00    0.00   44000/44002       boost::shared_ptr<boost::basic_wrap_stringstream<char> >::shared_ptr() [19]
+[59]     0.0    0.00    0.00   44002         boost::detail::shared_count::shared_count() [59]
+-----------------------------------------------
+                0.00    0.00       4/20020       void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+                0.00    0.00      16/20020       std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [107]
+                0.00    0.00   20000/20020       getCachedNthFibonacci(unsigned int) [23]
+[60]     0.0    0.00    0.00   20020         std::vector<unsigned int, std::allocator<unsigned int> >::size() const [60]
+-----------------------------------------------
+                0.00    0.00   20000/20000       getCachedNthFibonacci(unsigned int) [23]
+[61]     0.0    0.00    0.00   20000         std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [61]
+-----------------------------------------------
+                0.00    0.00    1000/2000        fibonacci_numbers_generation_cached::test_method() [6]
+                0.00    0.00    1000/2000        fibonacci_numbers_generation_recalculated::test_method() [7]
+[62]     0.0    0.00    0.00    2000         boost::unit_test::lazy_ostream_impl<char const (&) [42]>::~lazy_ostream_impl() [62]
+                0.00    0.00    2000/128000      boost::unit_test::lazy_ostream::~lazy_ostream() [53]
+-----------------------------------------------
+                0.00    0.00    1000/2000        fibonacci_numbers_generation_cached::test_method() [6]
+                0.00    0.00    1000/2000        fibonacci_numbers_generation_recalculated::test_method() [7]
+[63]     0.0    0.00    0.00    2000         void boost::unit_test::ut_detail::ignore_unused_variable_warning<std::invalid_argument>(std::invalid_argument const&) [63]
+-----------------------------------------------
+                0.00    0.00       4/106         void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+                0.00    0.00      18/106         void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&) [35]
+                0.00    0.00      18/106         _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_ [88]
+                0.00    0.00      18/106         _ZNSt16allocator_traitsISaIjEE12_S_constructIjJjEEENSt9enable_ifIXsr6__and_INS1_18__construct_helperIT_JDpT0_EE4typeEEE5valueEvE4typeERS0_PS5_DpOS6_ [87]
+                0.00    0.00      18/106         void __gnu_cxx::new_allocator<unsigned int>::construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [82]
+                0.00    0.00      30/106         void std::_Construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [77]
+[64]     0.0    0.00    0.00     106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+-----------------------------------------------
+                0.00    0.00      18/90          std::vector<unsigned int, std::allocator<unsigned int> >::cend() const [84]
+                0.00    0.00      18/90          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long) const [83]
+                0.00    0.00      18/90          std::vector<unsigned int, std::allocator<unsigned int> >::cbegin() const [85]
+                0.00    0.00      36/90          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long) const [72]
+[65]     0.0    0.00    0.00      90         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [65]
+-----------------------------------------------
+                0.00    0.00       2/82          boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::find(char const*, unsigned long, char) [131]
+                0.00    0.00      80/82          boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::length(char const*) [110]
+[66]     0.0    0.00    0.00      82         boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::eq(char, char) [66]
+-----------------------------------------------
+                0.00    0.00      72/72          bool __gnu_cxx::operator!=<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [70]
+[67]     0.0    0.00    0.00      72         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [67]
+-----------------------------------------------
+                0.00    0.00      18/66          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator=(unsigned int&&) [34]
+                0.00    0.00      18/66          std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int&&) [36]
+                0.00    0.00      30/66          std::move_iterator<unsigned int*>::operator*() const [75]
+[68]     0.0    0.00    0.00      66         std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&) [68]
+-----------------------------------------------
+                0.00    0.00      36/36          getCachedNthFibonacci(unsigned int) [23]
+[69]     0.0    0.00    0.00      36         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [69]
+-----------------------------------------------
+                0.00    0.00      36/36          getCachedNthFibonacci(unsigned int) [23]
+[70]     0.0    0.00    0.00      36         bool __gnu_cxx::operator!=<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [70]
+                0.00    0.00      72/72          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [67]
+-----------------------------------------------
+                0.00    0.00      36/36          getCachedNthFibonacci(unsigned int) [23]
+[71]     0.0    0.00    0.00      36         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [71]
+-----------------------------------------------
+                0.00    0.00      36/36          getCachedNthFibonacci(unsigned int) [23]
+[72]     0.0    0.00    0.00      36         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long) const [72]
+                0.00    0.00      36/90          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [65]
+-----------------------------------------------
+                0.00    0.00       2/32          unsigned int* std::__uninitialized_copy<false>::__uninit_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [157]
+                0.00    0.00      30/32          unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+[73]     0.0    0.00    0.00      32         unsigned int* std::__addressof<unsigned int>(unsigned int&) [73]
+-----------------------------------------------
+                0.00    0.00       5/31          __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [99]
+                0.00    0.00      26/31          unsigned long std::allocator_traits<std::allocator<unsigned int> >::_S_max_size<std::allocator<unsigned int> const, void>(std::allocator<unsigned int> const&, int) [80]
+[74]     0.0    0.00    0.00      31         __gnu_cxx::new_allocator<unsigned int>::max_size() const [74]
+-----------------------------------------------
+                0.00    0.00      30/30          unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+[75]     0.0    0.00    0.00      30         std::move_iterator<unsigned int*>::operator*() const [75]
+                0.00    0.00      30/66          std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&) [68]
+-----------------------------------------------
+                0.00    0.00      30/30          unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+[76]     0.0    0.00    0.00      30         std::move_iterator<unsigned int*>::operator++() [76]
+-----------------------------------------------
+                0.00    0.00      30/30          unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*) [37]
+[77]     0.0    0.00    0.00      30         void std::_Construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [77]
+                0.00    0.00      30/106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [79]
+[78]     0.0    0.00    0.00      26         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const [78]
+-----------------------------------------------
+                0.00    0.00       8/26          std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [107]
+                0.00    0.00      18/26          std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned long) [92]
+[79]     0.0    0.00    0.00      26         std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [79]
+                0.00    0.00      26/26          std::allocator_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [81]
+                0.00    0.00      26/26          std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const [78]
+-----------------------------------------------
+                0.00    0.00      26/26          std::allocator_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [81]
+[80]     0.0    0.00    0.00      26         unsigned long std::allocator_traits<std::allocator<unsigned int> >::_S_max_size<std::allocator<unsigned int> const, void>(std::allocator<unsigned int> const&, int) [80]
+                0.00    0.00      26/31          __gnu_cxx::new_allocator<unsigned int>::max_size() const [74]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [79]
+[81]     0.0    0.00    0.00      26         std::allocator_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [81]
+                0.00    0.00      26/26          unsigned long std::allocator_traits<std::allocator<unsigned int> >::_S_max_size<std::allocator<unsigned int> const, void>(std::allocator<unsigned int> const&, int) [80]
+-----------------------------------------------
+                0.00    0.00      18/18          _ZNSt16allocator_traitsISaIjEE12_S_constructIjJjEEENSt9enable_ifIXsr6__and_INS1_18__construct_helperIT_JDpT0_EE4typeEEE5valueEvE4typeERS0_PS5_DpOS6_ [87]
+[82]     0.0    0.00    0.00      18         void __gnu_cxx::new_allocator<unsigned int>::construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [82]
+                0.00    0.00      18/106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[83]     0.0    0.00    0.00      18         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long) const [83]
+                0.00    0.00      18/90          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [65]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[84]     0.0    0.00    0.00      18         std::vector<unsigned int, std::allocator<unsigned int> >::cend() const [84]
+                0.00    0.00      18/90          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [65]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[85]     0.0    0.00    0.00      18         std::vector<unsigned int, std::allocator<unsigned int> >::cbegin() const [85]
+                0.00    0.00      18/90          __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [65]
+-----------------------------------------------
+                0.00    0.00      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned long) [92]
+[86]     0.0    0.00    0.00      18         std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const [86]
+-----------------------------------------------
+                0.00    0.00      18/18          _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_ [88]
+[87]     0.0    0.00    0.00      18         _ZNSt16allocator_traitsISaIjEE12_S_constructIjJjEEENSt9enable_ifIXsr6__and_INS1_18__construct_helperIT_JDpT0_EE4typeEEE5valueEvE4typeERS0_PS5_DpOS6_ [87]
+                0.00    0.00      18/106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+                0.00    0.00      18/18          void __gnu_cxx::new_allocator<unsigned int>::construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [82]
+-----------------------------------------------
+                0.00    0.00       4/18          void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+                0.00    0.00      14/18          void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&) [35]
+[88]     0.0    0.00    0.00      18         _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_ [88]
+                0.00    0.00      18/106         unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&) [64]
+                0.00    0.00      18/18          _ZNSt16allocator_traitsISaIjEE12_S_constructIjJjEEENSt9enable_ifIXsr6__and_INS1_18__construct_helperIT_JDpT0_EE4typeEEE5valueEvE4typeERS0_PS5_DpOS6_ [87]
+-----------------------------------------------
+                0.00    0.00      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > > std::back_inserter<std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >&) [93]
+[89]     0.0    0.00    0.00      18         std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::back_insert_iterator(std::vector<unsigned int, std::allocator<unsigned int> >&) [89]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[90]     0.0    0.00    0.00      18         std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() [90]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[91]     0.0    0.00    0.00      18         std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [91]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[92]     0.0    0.00    0.00      18         std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned long) [92]
+                0.00    0.00      18/26          std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [79]
+                0.00    0.00      18/18          std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const [86]
+-----------------------------------------------
+                0.00    0.00      18/18          getCachedNthFibonacci(unsigned int) [23]
+[93]     0.0    0.00    0.00      18         std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > > std::back_inserter<std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >&) [93]
+                0.00    0.00      18/18          std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::back_insert_iterator(std::vector<unsigned int, std::allocator<unsigned int> >&) [89]
+-----------------------------------------------
+                0.00    0.00       1/10          std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [221]
+                0.00    0.00       1/10          void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag) [158]
+                0.00    0.00       8/10          void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+[94]     0.0    0.00    0.00      10         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [94]
+-----------------------------------------------
+                0.00    0.00       8/8           std::move_iterator<unsigned int*> std::__make_move_if_noexcept_iterator<unsigned int*, std::move_iterator<unsigned int*> >(unsigned int*) [96]
+[95]     0.0    0.00    0.00       8         std::move_iterator<unsigned int*>::move_iterator(unsigned int*) [95]
+-----------------------------------------------
+                0.00    0.00       8/8           unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [41]
+[96]     0.0    0.00    0.00       8         std::move_iterator<unsigned int*> std::__make_move_if_noexcept_iterator<unsigned int*, std::move_iterator<unsigned int*> >(unsigned int*) [96]
+                0.00    0.00       8/8           std::move_iterator<unsigned int*>::move_iterator(unsigned int*) [95]
+-----------------------------------------------
+                0.00    0.00       1/5           void boost::unit_test::assign_op<char, char const>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, boost::unit_test::basic_cstring<char const>, int) [144]
+                0.00    0.00       2/5           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       2/5           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+[97]     0.0    0.00    0.00       5         boost::unit_test::basic_cstring<char const>::begin() [97]
+-----------------------------------------------
+                0.00    0.00       5/5           std::allocator_traits<std::allocator<unsigned int> >::deallocate(std::allocator<unsigned int>&, unsigned int*, unsigned long) [103]
+[98]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long) [98]
+-----------------------------------------------
+                0.00    0.00       5/5           std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) [104]
+[99]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [99]
+                0.00    0.00       5/31          __gnu_cxx::new_allocator<unsigned int>::max_size() const [74]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*) [105]
+[100]    0.0    0.00    0.00       5         void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*) [100]
+-----------------------------------------------
+                0.00    0.00       1/5           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag) [158]
+                0.00    0.00       4/5           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+[101]    0.0    0.00    0.00       5         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [101]
+                0.00    0.00       5/5           std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) [104]
+-----------------------------------------------
+                0.00    0.00       1/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [156]
+                0.00    0.00       4/5           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+[102]    0.0    0.00    0.00       5         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [102]
+                0.00    0.00       5/5           std::allocator_traits<std::allocator<unsigned int> >::deallocate(std::allocator<unsigned int>&, unsigned int*, unsigned long) [103]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [102]
+[103]    0.0    0.00    0.00       5         std::allocator_traits<std::allocator<unsigned int> >::deallocate(std::allocator<unsigned int>&, unsigned int*, unsigned long) [103]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long) [98]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [101]
+[104]    0.0    0.00    0.00       5         std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) [104]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [99]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [106]
+[105]    0.0    0.00    0.00       5         void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*) [105]
+                0.00    0.00       5/5           void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*) [100]
+-----------------------------------------------
+                0.00    0.00       1/5           std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [221]
+                0.00    0.00       4/5           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+[106]    0.0    0.00    0.00       5         void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [106]
+                0.00    0.00       5/5           void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*) [105]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&) [38]
+[107]    0.0    0.00    0.00       4         std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [107]
+                0.00    0.00      16/20020       std::vector<unsigned int, std::allocator<unsigned int> >::size() const [60]
+                0.00    0.00       8/26          std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [79]
+                0.00    0.00       4/4           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [108]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [107]
+[108]    0.0    0.00    0.00       4         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [108]
+-----------------------------------------------
+                0.00    0.00       2/4           boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::~sp_counted_impl_p() [176]
+                0.00    0.00       2/4           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [129]
+[109]    0.0    0.00    0.00       4         operator delete(void*, unsigned long) [109]
+-----------------------------------------------
+                0.00    0.00       3/3           boost::unit_test::basic_cstring<char const>::basic_cstring(char const*) [143]
+[110]    0.0    0.00    0.00       3         boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::length(char const*) [110]
+                0.00    0.00      80/82          boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::eq(char, char) [66]
+-----------------------------------------------
+                0.00    0.00       1/3           void boost::unit_test::assign_op<char, char const>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, boost::unit_test::basic_cstring<char const>, int) [144]
+                0.00    0.00       1/3           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       1/3           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+[111]    0.0    0.00    0.00       3         boost::unit_test::basic_cstring<char const>::size() const [111]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::unit_test::callback0<boost::unit_test::ut_detail::unused>::~callback0() [203]
+[112]    0.0    0.00    0.00       2         boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::~shared_ptr() [112]
+                0.00    0.00       2/44004       boost::detail::shared_count::~shared_count() [58]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::dispose() [175]
+[113]    0.0    0.00    0.00       2         void boost::checked_delete<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [113]
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [129]
+-----------------------------------------------
+                0.00    0.00       2/2           void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [121]
+[114]    0.0    0.00    0.00       2         boost::detail::shared_count::swap(boost::detail::shared_count&) [114]
+-----------------------------------------------
+                0.00    0.00       2/2           void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [121]
+[115]    0.0    0.00    0.00       2         boost::detail::shared_count::shared_count<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [115]
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::sp_counted_impl_p(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [119]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::shared_count::~shared_count() [58]
+[116]    0.0    0.00    0.00       2         boost::detail::sp_counted_base::release() [116]
+                0.00    0.00       2/2           boost::detail::atomic_exchange_and_add(int*, int) [122]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::sp_counted_impl_p(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [119]
+[117]    0.0    0.00    0.00       2         boost::detail::sp_counted_base::sp_counted_base() [117]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::~sp_counted_impl_p() [120]
+[118]    0.0    0.00    0.00       2         boost::detail::sp_counted_base::~sp_counted_base() [118]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::shared_count::shared_count<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [115]
+[119]    0.0    0.00    0.00       2         boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::sp_counted_impl_p(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [119]
+                0.00    0.00       2/2           boost::detail::sp_counted_base::sp_counted_base() [117]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::~sp_counted_impl_p() [176]
+[120]    0.0    0.00    0.00       2         boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::~sp_counted_impl_p() [120]
+                0.00    0.00       2/2           boost::detail::sp_counted_base::~sp_counted_base() [118]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::shared_ptr<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [42]
+[121]    0.0    0.00    0.00       2         void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [121]
+                0.00    0.00       2/2           boost::detail::shared_count::shared_count<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [115]
+                0.00    0.00       2/2           boost::detail::shared_count::swap(boost::detail::shared_count&) [114]
+                0.00    0.00       2/44004       boost::detail::shared_count::~shared_count() [58]
+                0.00    0.00       2/2           boost::detail::sp_enable_shared_from_this(...) [123]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_counted_base::release() [116]
+[122]    0.0    0.00    0.00       2         boost::detail::atomic_exchange_and_add(int*, int) [122]
+-----------------------------------------------
+                0.00    0.00       2/2           void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [121]
+[123]    0.0    0.00    0.00       2         boost::detail::sp_enable_shared_from_this(...) [123]
+-----------------------------------------------
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+[124]    0.0    0.00    0.00       2         boost::unit_test::basic_cstring<char const>::end() [124]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::unit_test::make_test_case(boost::unit_test::callback0<boost::unit_test::ut_detail::unused> const&, boost::unit_test::basic_cstring<char const>) [194]
+[125]    0.0    0.00    0.00       2         boost::unit_test::basic_cstring<char const>::basic_cstring(std::string const&) [125]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::callback0_impl_t(void (*)()) [128]
+[126]    0.0    0.00    0.00       2         boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::callback0_impl() [126]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [130]
+[127]    0.0    0.00    0.00       2         boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::~callback0_impl() [127]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::unit_test::callback0<boost::unit_test::ut_detail::unused>::callback0<void (*)()>(void (*)()) [43]
+[128]    0.0    0.00    0.00       2         boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::callback0_impl_t(void (*)()) [128]
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::callback0_impl() [126]
+-----------------------------------------------
+                0.00    0.00       2/2           void boost::checked_delete<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [113]
+[129]    0.0    0.00    0.00       2         boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [129]
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [130]
+                0.00    0.00       2/4           operator delete(void*, unsigned long) [109]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [129]
+[130]    0.0    0.00    0.00       2         boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [130]
+                0.00    0.00       2/2           boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::~callback0_impl() [127]
+-----------------------------------------------
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+[131]    0.0    0.00    0.00       2         boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::find(char const*, unsigned long, char) [131]
+                0.00    0.00       2/82          boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::eq(char, char) [66]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<unsigned int>::~allocator() [135]
+[132]    0.0    0.00    0.00       2         __gnu_cxx::new_allocator<unsigned int>::~new_allocator() [132]
+-----------------------------------------------
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+[133]    0.0    0.00    0.00       2         boost::unit_test::basic_cstring<char const>::is_empty() const [133]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&) [159]
+                0.00    0.00       1/2           std::initializer_list<unsigned int>::end() const [149]
+[134]    0.0    0.00    0.00       2         std::initializer_list<unsigned int>::begin() const [134]
+-----------------------------------------------
+                0.00    0.00       1/2           getCachedNthFibonacci(unsigned int) [23]
+                0.00    0.00       1/2           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [154]
+[135]    0.0    0.00    0.00       2         std::allocator<unsigned int>::~allocator() [135]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<unsigned int>::~new_allocator() [132]
+-----------------------------------------------
+                0.00    0.00       2/2           unsigned int* std::__uninitialized_copy<false>::__uninit_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [157]
+[136]    0.0    0.00    0.00       2         void std::_Construct<unsigned int, unsigned int const&>(unsigned int*, unsigned int const&) [136]
+                0.00    0.00       2/2           unsigned int const& std::forward<unsigned int const&>(std::remove_reference<unsigned int const&>::type&) [137]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Construct<unsigned int, unsigned int const&>(unsigned int*, unsigned int const&) [136]
+[137]    0.0    0.00    0.00       2         unsigned int const& std::forward<unsigned int const&>(std::remove_reference<unsigned int const&>::type&) [137]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+[138]    0.0    0.00    0.00       1         boost::unit_test::basic_cstring<char const>::trim_right(char const*) [138]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim(boost::unit_test::basic_cstring<char const>) [140]
+[139]    0.0    0.00    0.00       1         boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+                0.00    0.00       2/5           boost::unit_test::basic_cstring<char const>::begin() [97]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::is_empty() const [133]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::end() [124]
+                0.00    0.00       1/3           boost::unit_test::basic_cstring<char const>::size() const [111]
+                0.00    0.00       1/2           boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::find(char const*, unsigned long, char) [131]
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim_right(char const*) [138]
+-----------------------------------------------
+                0.00    0.00       1/1           init_unit_test() [166]
+[140]    0.0    0.00    0.00       1         boost::unit_test::basic_cstring<char const>::trim(boost::unit_test::basic_cstring<char const>) [140]
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [139]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+[141]    0.0    0.00    0.00       1         boost::unit_test::basic_cstring<char const>::trim_left(char const*) [141]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim(boost::unit_test::basic_cstring<char const>) [140]
+[142]    0.0    0.00    0.00       1         boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [142]
+                0.00    0.00       2/5           boost::unit_test::basic_cstring<char const>::begin() [97]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::is_empty() const [133]
+                0.00    0.00       1/2           boost::unit_test::basic_cstring<char const>::end() [124]
+                0.00    0.00       1/3           boost::unit_test::basic_cstring<char const>::size() const [111]
+                0.00    0.00       1/2           boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::find(char const*, unsigned long, char) [131]
+                0.00    0.00       1/1           boost::unit_test::basic_cstring<char const>::trim_left(char const*) [141]
+-----------------------------------------------
+                0.00    0.00       1/1           init_unit_test() [166]
+[143]    0.0    0.00    0.00       1         boost::unit_test::basic_cstring<char const>::basic_cstring(char const*) [143]
+                0.00    0.00       3/3           boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::length(char const*) [110]
+-----------------------------------------------
+                0.00    0.00       1/1           init_unit_test() [166]
+[144]    0.0    0.00    0.00       1         void boost::unit_test::assign_op<char, char const>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, boost::unit_test::basic_cstring<char const>, int) [144]
+                0.00    0.00       1/5           boost::unit_test::basic_cstring<char const>::begin() [97]
+                0.00    0.00       1/3           boost::unit_test::basic_cstring<char const>::size() const [111]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_cached_id>::instance() [208]
+[145]    0.0    0.00    0.00       1         boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_cached_id>::auto_tc_exp_fail() [145]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_recalculated_id>::instance() [209]
+[146]    0.0    0.00    0.00       1         boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_recalculated_id>::auto_tc_exp_fail() [146]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<unsigned int>::allocator(std::allocator<unsigned int> const&) [151]
+[147]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<unsigned int>::new_allocator(__gnu_cxx::new_allocator<unsigned int> const&) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<unsigned int>::allocator() [152]
+[148]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<unsigned int>::new_allocator() [148]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&) [159]
+[149]    0.0    0.00    0.00       1         std::initializer_list<unsigned int>::end() const [149]
+                0.00    0.00       1/2           std::initializer_list<unsigned int>::begin() const [134]
+                0.00    0.00       1/1           std::initializer_list<unsigned int>::size() const [150]
+-----------------------------------------------
+                0.00    0.00       1/1           std::initializer_list<unsigned int>::end() const [149]
+[150]    0.0    0.00    0.00       1         std::initializer_list<unsigned int>::size() const [150]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl(std::allocator<unsigned int> const&) [153]
+[151]    0.0    0.00    0.00       1         std::allocator<unsigned int>::allocator(std::allocator<unsigned int> const&) [151]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<unsigned int>::new_allocator(__gnu_cxx::new_allocator<unsigned int> const&) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           getCachedNthFibonacci(unsigned int) [23]
+[152]    0.0    0.00    0.00       1         std::allocator<unsigned int>::allocator() [152]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<unsigned int>::new_allocator() [148]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(std::allocator<unsigned int> const&) [155]
+[153]    0.0    0.00    0.00       1         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl(std::allocator<unsigned int> const&) [153]
+                0.00    0.00       1/1           std::allocator<unsigned int>::allocator(std::allocator<unsigned int> const&) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [156]
+[154]    0.0    0.00    0.00       1         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [154]
+                0.00    0.00       1/2           std::allocator<unsigned int>::~allocator() [135]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&) [159]
+[155]    0.0    0.00    0.00       1         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(std::allocator<unsigned int> const&) [155]
+                0.00    0.00       1/1           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl(std::allocator<unsigned int> const&) [153]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [221]
+[156]    0.0    0.00    0.00       1         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [156]
+                0.00    0.00       1/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [102]
+                0.00    0.00       1/1           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [154]
+-----------------------------------------------
+                0.00    0.00       1/1           unsigned int* std::uninitialized_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [161]
+[157]    0.0    0.00    0.00       1         unsigned int* std::__uninitialized_copy<false>::__uninit_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [157]
+                0.00    0.00       2/2           void std::_Construct<unsigned int, unsigned int const&>(unsigned int*, unsigned int const&) [136]
+                0.00    0.00       2/32          unsigned int* std::__addressof<unsigned int>(unsigned int&) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&) [159]
+[158]    0.0    0.00    0.00       1         void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag) [158]
+                0.00    0.00       1/1           std::iterator_traits<unsigned int const*>::difference_type std::distance<unsigned int const*>(unsigned int const*, unsigned int const*) [164]
+                0.00    0.00       1/5           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [101]
+                0.00    0.00       1/10          std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [94]
+                0.00    0.00       1/1           unsigned int* std::__uninitialized_copy_a<unsigned int const*, unsigned int*, unsigned int>(unsigned int const*, unsigned int const*, unsigned int*, std::allocator<unsigned int>&) [163]
+-----------------------------------------------
+                0.00    0.00       1/1           getCachedNthFibonacci(unsigned int) [23]
+[159]    0.0    0.00    0.00       1         std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&) [159]
+                0.00    0.00       1/1           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(std::allocator<unsigned int> const&) [155]
+                0.00    0.00       1/2           std::initializer_list<unsigned int>::begin() const [134]
+                0.00    0.00       1/1           std::initializer_list<unsigned int>::end() const [149]
+                0.00    0.00       1/1           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag) [158]
+-----------------------------------------------
+                0.00    0.00       1/1           std::iterator_traits<unsigned int const*>::difference_type std::distance<unsigned int const*>(unsigned int const*, unsigned int const*) [164]
+[160]    0.0    0.00    0.00       1         std::iterator_traits<unsigned int const*>::difference_type std::__distance<unsigned int const*>(unsigned int const*, unsigned int const*, std::random_access_iterator_tag) [160]
+-----------------------------------------------
+                0.00    0.00       1/1           unsigned int* std::__uninitialized_copy_a<unsigned int const*, unsigned int*, unsigned int>(unsigned int const*, unsigned int const*, unsigned int*, std::allocator<unsigned int>&) [163]
+[161]    0.0    0.00    0.00       1         unsigned int* std::uninitialized_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [161]
+                0.00    0.00       1/1           unsigned int* std::__uninitialized_copy<false>::__uninit_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [157]
+-----------------------------------------------
+                0.00    0.00       1/1           std::iterator_traits<unsigned int const*>::difference_type std::distance<unsigned int const*>(unsigned int const*, unsigned int const*) [164]
+[162]    0.0    0.00    0.00       1         std::iterator_traits<unsigned int const*>::iterator_category std::__iterator_category<unsigned int const*>(unsigned int const* const&) [162]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag) [158]
+[163]    0.0    0.00    0.00       1         unsigned int* std::__uninitialized_copy_a<unsigned int const*, unsigned int*, unsigned int>(unsigned int const*, unsigned int const*, unsigned int*, std::allocator<unsigned int>&) [163]
+                0.00    0.00       1/1           unsigned int* std::uninitialized_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [161]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag) [158]
+[164]    0.0    0.00    0.00       1         std::iterator_traits<unsigned int const*>::difference_type std::distance<unsigned int const*>(unsigned int const*, unsigned int const*) [164]
+                0.00    0.00       1/1           std::iterator_traits<unsigned int const*>::iterator_category std::__iterator_category<unsigned int const*>(unsigned int const* const&) [162]
+                0.00    0.00       1/1           std::iterator_traits<unsigned int const*>::difference_type std::__distance<unsigned int const*>(unsigned int const*, unsigned int const*, std::random_access_iterator_tag) [160]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [231]
+[165]    0.0    0.00    0.00       1         __cxx_global_var_init47 [165]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [14] getNthFibonacci(int, bool) [12] boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::~lazy_ostream_impl() [100] void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*)
+  [30] countNthFibonacci(int) [22] boost::unit_test::readonly_property<bool>::readonly_property(bool) [101] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long)
+  [23] getCachedNthFibonacci(unsigned int) [144] void boost::unit_test::assign_op<char, char const>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, boost::unit_test::basic_cstring<char const>, int) [153] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl(std::allocator<unsigned int> const&)
+   [4] fibonacci_numbers_generation_cached_invoker() (fibonacci_unittest.cpp) [126] boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::callback0_impl() [154] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl()
+   [5] fibonacci_numbers_generation_recalculated_invoker() (fibonacci_unittest.cpp) [127] boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>::~callback0_impl() [102] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long)
+   [6] fibonacci_numbers_generation_cached::test_method() [145] boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_cached_id>::auto_tc_exp_fail() [94] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator()
+   [7] fibonacci_numbers_generation_recalculated::test_method() [146] boost::unit_test::ut_detail::auto_tc_exp_fail<fibonacci_numbers_generation_recalculated_id>::auto_tc_exp_fail() [155] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(std::allocator<unsigned int> const&)
+  [19] boost::shared_ptr<boost::basic_wrap_stringstream<char> >::shared_ptr() [128] boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::callback0_impl_t(void (*)()) [156] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base()
+  [28] boost::shared_ptr<boost::basic_wrap_stringstream<char> >::~shared_ptr() [129] boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [95] std::move_iterator<unsigned int*>::move_iterator(unsigned int*)
+  [42] boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::shared_ptr<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [130] boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>::~callback0_impl_t() [76] std::move_iterator<unsigned int*>::operator++()
+ [112] boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >::~shared_ptr() [66] boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::eq(char, char) [103] std::allocator_traits<std::allocator<unsigned int> >::deallocate(std::allocator<unsigned int>&, unsigned int*, unsigned long)
+  [20] boost::test_tools::predicate_result::readonly_property62::readonly_property62(bool) [131] boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::find(char const*, unsigned long, char) [80] unsigned long std::allocator_traits<std::allocator<unsigned int> >::_S_max_size<std::allocator<unsigned int> const, void>(std::allocator<unsigned int> const&, int)
+  [11] boost::test_tools::predicate_result::predicate_result(bool) [110] boost::unit_test::ut_detail::bcs_char_traits_impl<char const>::length(char const*) [87] _ZNSt16allocator_traitsISaIjEE12_S_constructIjJjEEENSt9enable_ifIXsr6__and_INS1_18__construct_helperIT_JDpT0_EE4typeEEE5valueEvE4typeERS0_PS5_DpOS6_
+  [15] boost::test_tools::predicate_result::~predicate_result() [63] void boost::unit_test::ut_detail::ignore_unused_variable_warning<std::invalid_argument>(std::invalid_argument const&) [104] std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long)
+   [3] bool boost::test_tools::tt_detail::check_frwd<boost::test_tools::tt_detail::equal_impl_frwd, int, int>(boost::test_tools::tt_detail::equal_impl_frwd, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, int const&, char const*, int const&, char const*) [1] boost::unit_test::ut_detail::unused boost::unit_test::ut_detail::invoker<boost::unit_test::ut_detail::unused>::invoke<void (*)()>(void (*&)()) [81] std::allocator_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&)
+  [10] boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl<int, int>(int const&, int const&) [18] boost::unit_test::lazy_ostream_impl<char const (&) [1]> boost::unit_test::operator<< <char [1]>(boost::unit_test::lazy_ostream const&, char const (&) [1]) [88] _ZNSt16allocator_traitsISaIjEE9constructIjJjEEEDTcl12_S_constructfp_fp0_spclsr3stdE7forwardIT0_Efp1_EEERS0_PT_DpOS3_
+  [55] boost::test_tools::tt_detail::print_helper_t<int> boost::test_tools::tt_detail::print_helper<int>(int const&) [45] boost::unit_test::lazy_ostream_impl<char const (&) [42]> boost::unit_test::operator<< <char [42]>(boost::unit_test::lazy_ostream const&, char const (&) [42]) [157] unsigned int* std::__uninitialized_copy<false>::__uninit_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*)
+  [56] boost::test_tools::tt_detail::print_helper_t<int>::print_helper_t(int const&) [24] boost::unit_test::lazy_ostream_impl<char const (&) [44]> boost::unit_test::operator<< <char [44]>(boost::unit_test::lazy_ostream const&, char const (&) [44]) [37] unsigned int* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*)
+ [113] void boost::checked_delete<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [17] boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&> boost::unit_test::operator<< <boost::test_tools::tt_detail::print_helper_t<int> >(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [89] std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::back_insert_iterator(std::vector<unsigned int, std::allocator<unsigned int> >&)
+ [114] boost::detail::shared_count::swap(boost::detail::shared_count&) [98] __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long) [34] std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator=(unsigned int&&)
+  [59] boost::detail::shared_count::shared_count() [99] __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [90] std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator*()
+ [115] boost::detail::shared_count::shared_count<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [82] void __gnu_cxx::new_allocator<unsigned int>::construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&) [91] std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > >::operator++()
+  [58] boost::detail::shared_count::~shared_count() [147] __gnu_cxx::new_allocator<unsigned int>::new_allocator(__gnu_cxx::new_allocator<unsigned int> const&) [35] void std::vector<unsigned int, std::allocator<unsigned int> >::emplace_back<unsigned int>(unsigned int&&)
+ [116] boost::detail::sp_counted_base::release() [148] __gnu_cxx::new_allocator<unsigned int>::new_allocator() [38] void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&)
+ [117] boost::detail::sp_counted_base::sp_counted_base() [132] __gnu_cxx::new_allocator<unsigned int>::~new_allocator() [158] void std::vector<unsigned int, std::allocator<unsigned int> >::_M_range_initialize<unsigned int const*>(unsigned int const*, unsigned int const*, std::forward_iterator_tag)
+ [118] boost::detail::sp_counted_base::~sp_counted_base() [65] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [92] std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned long)
+ [119] boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::sp_counted_impl_p(boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*) [69] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [36] std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int&&)
+ [120] boost::detail::sp_counted_impl_p<boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >::~sp_counted_impl_p() [70] bool __gnu_cxx::operator!=<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [159] std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::initializer_list<unsigned int>, std::allocator<unsigned int> const&)
+ [121] void boost::detail::sp_pointer_construct<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused>, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()> >(boost::shared_ptr<boost::unit_test::ut_detail::callback0_impl<boost::unit_test::ut_detail::unused> >*, boost::unit_test::ut_detail::callback0_impl_t<boost::unit_test::ut_detail::unused, void (*)()>*, boost::detail::shared_count&) [9] boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::call_impl<int, int>(int const&, int const&, mpl_::bool_<false>) const [61] std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long)
+ [122] boost::detail::atomic_exchange_and_add(int*, int) [8] boost::test_tools::predicate_result boost::test_tools::tt_detail::equal_impl_frwd::operator()<int, int>(int const&, int const&) const [136] void std::_Construct<unsigned int, unsigned int const&>(unsigned int*, unsigned int const&)
+ [123] boost::detail::sp_enable_shared_from_this(...) [111] boost::unit_test::basic_cstring<char const>::size() const [77] void std::_Construct<unsigned int, unsigned int>(unsigned int*, unsigned int&&)
+  [16] boost::unit_test::lazy_ostream::instance() [133] boost::unit_test::basic_cstring<char const>::is_empty() const [160] std::iterator_traits<unsigned int const*>::difference_type std::__distance<unsigned int const*>(unsigned int const*, unsigned int const*, std::random_access_iterator_tag)
+  [27] boost::unit_test::lazy_ostream::lazy_ostream(bool) [74] __gnu_cxx::new_allocator<unsigned int>::max_size() const [73] unsigned int* std::__addressof<unsigned int>(unsigned int&)
+  [53] boost::unit_test::lazy_ostream::~lazy_ostream() [67] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [93] std::back_insert_iterator<std::vector<unsigned int, std::allocator<unsigned int> > > std::back_inserter<std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >&)
+ [138] boost::unit_test::basic_cstring<char const>::trim_right(char const*) [71] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [161] unsigned int* std::uninitialized_copy<unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*)
+ [139] boost::unit_test::basic_cstring<char const>::trim_right(boost::unit_test::basic_cstring<char const>) [83] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long) const [39] unsigned int* std::uninitialized_copy<std::move_iterator<unsigned int*>, unsigned int*>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*)
+ [124] boost::unit_test::basic_cstring<char const>::end() [72] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long) const [162] std::iterator_traits<unsigned int const*>::iterator_category std::__iterator_category<unsigned int const*>(unsigned int const* const&)
+ [140] boost::unit_test::basic_cstring<char const>::trim(boost::unit_test::basic_cstring<char const>) [78] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const [163] unsigned int* std::__uninitialized_copy_a<unsigned int const*, unsigned int*, unsigned int>(unsigned int const*, unsigned int const*, unsigned int*, std::allocator<unsigned int>&)
+  [97] boost::unit_test::basic_cstring<char const>::begin() [31] std::move_iterator<unsigned int*>::base() const [40] unsigned int* std::__uninitialized_copy_a<std::move_iterator<unsigned int*>, unsigned int*, unsigned int>(std::move_iterator<unsigned int*>, std::move_iterator<unsigned int*>, unsigned int*, std::allocator<unsigned int>&)
+  [57] boost::unit_test::basic_cstring<char const>::null_str() [75] std::move_iterator<unsigned int*>::operator*() const [96] std::move_iterator<unsigned int*> std::__make_move_if_noexcept_iterator<unsigned int*, std::move_iterator<unsigned int*> >(unsigned int*)
+ [141] boost::unit_test::basic_cstring<char const>::trim_left(char const*) [149] std::initializer_list<unsigned int>::end() const [41] unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+ [142] boost::unit_test::basic_cstring<char const>::trim_left(boost::unit_test::basic_cstring<char const>) [150] std::initializer_list<unsigned int>::size() const [108] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [143] boost::unit_test::basic_cstring<char const>::basic_cstring(char const*) [134] std::initializer_list<unsigned int>::begin() const [68] std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&)
+  [54] boost::unit_test::basic_cstring<char const>::basic_cstring(char const*, unsigned long) [107] std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [137] unsigned int const& std::forward<unsigned int const&>(std::remove_reference<unsigned int const&>::type&)
+ [125] boost::unit_test::basic_cstring<char const>::basic_cstring(std::string const&) [84] std::vector<unsigned int, std::allocator<unsigned int> >::cend() const [64] unsigned int&& std::forward<unsigned int>(std::remove_reference<unsigned int>::type&)
+  [13] boost::unit_test::basic_cstring<char const>::basic_cstring() [60] std::vector<unsigned int, std::allocator<unsigned int> >::size() const [105] void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*)
+  [21] boost::unit_test::class_property<bool>::class_property(bool) [85] std::vector<unsigned int, std::allocator<unsigned int> >::cbegin() const [106] void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  [26] boost::unit_test::lazy_ostream_impl<char const (&) [1]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [1]) [86] std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const [164] std::iterator_traits<unsigned int const*>::difference_type std::distance<unsigned int const*>(unsigned int const*, unsigned int const*)
+  [29] boost::unit_test::lazy_ostream_impl<char const (&) [1]>::~lazy_ostream_impl() [79] std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [32] bool std::operator==<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&)
+  [44] boost::unit_test::lazy_ostream_impl<char const (&) [42]>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, char const (&) [42]) [151] std::allocator<unsigned int>::allocator(std::allocator<unsigned int> const&) [33] bool std::operator!=<unsigned int*>(std::move_iterator<unsigned int*> const&, std::move_iterator<unsigned int*> const&)
+  [62] boost::unit_test::lazy_ostream_impl<char const (&) [42]>::~lazy_ostream_impl() [152] std::allocator<unsigned int>::allocator() [109] operator delete(void*, unsigned long)
+  [25] boost::unit_test::lazy_ostream_impl<boost::test_tools::tt_detail::print_helper_t<int> const&>::lazy_ostream_impl(boost::unit_test::lazy_ostream const&, boost::test_tools::tt_detail::print_helper_t<int> const&) [135] std::allocator<unsigned int>::~allocator() [165] __cxx_global_var_init47 (fibonacci_unittest.cpp)

@@ -3,9 +3,7 @@
 #include <stdexcept>
 #include <vector>
 
-const int MAX_CACHE = 10;
-
-int getNthFibonacci(int step);
-int getCachedNthFibonacci(int step);
+int getNthFibonacci(int step, bool recalculate);
+int getCachedNthFibonacci(unsigned step);
 int countNthFibonacci(int step);
 #endif

@@ -1,7 +1,9 @@
 #include "fibonacci.h"
+#include <algorithm>
 
-int getNthFibonacci(int step)
+int getNthFibonacci(int step, bool recalculate)
 {
+
     if (step <  0) 
     {
         throw std::invalid_argument("Requested negative element");
@@ -11,25 +13,27 @@ int getNthFibonacci(int step)
         return 0;
     }
 
-    return (step < MAX_CACHE) ? getCachedNthFibonacci(step) : countNthFibonacci(step);
+    return recalculate ? countNthFibonacci(static_cast<unsigned>(step)) : getCachedNthFibonacci(static_cast<unsigned>(step));
 }
 
-int getCachedNthFibonacci(int step)/*{{{*/
+int getCachedNthFibonacci(unsigned step)/*{{{*/
 {
-    static std::vector<int> cache(MAX_CACHE, 0);
+    static std::vector<unsigned> cache{0, 1};
 
-    int cached_value = cache[step];
-    if (cached_value) 
+    if (step >= cache.size()) 
     {
-        return cached_value;
+        cache.reserve(step);
+        auto begin = cache.cend() -2;
+        auto end = cache.cbegin() + step;
+
+        std::transform(begin + 1, end, begin, std::back_inserter(cache), [](unsigned lhs, unsigned rhs) {
+                return lhs + rhs;
+                });
     }
 
-    int result = countNthFibonacci(step);
-
-    cache[step] = result;
-
-    return result;
+    return cache[step];
 }/*}}}*/
+
 int countNthFibonacci(int step)/*{{{*/
 {
     int first = 0, second = 1, result = 0;

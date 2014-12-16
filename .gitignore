@@ -2,3 +2,4 @@
 !*.cc
 !*.h
 !*.cpp
+!Makefile
