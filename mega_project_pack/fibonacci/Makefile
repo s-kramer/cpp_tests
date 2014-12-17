@@ -1,11 +1,18 @@
 CC=ccache clang++
 CFLAGS=-c -Wall -std=c++14 -g -O0
 LDFLAGS=-lboost_system -lboost_unit_test_framework
-SOURCES=fibonacci.cpp fibonacci_unittest.cpp fibonacci_main_cached.cpp fibonacci_main_recalc.cpp
+
+GPROF?=no
+
+ifeq ($(GPROF),yes)
+	LDFLAGS+=-pg
+endif
+
+SOURCES=fibonacci.cpp fibonacci_unittest.cpp 
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=fibonacci
 
-all: $(SOURCES) $(EXECUTABLE)
+all: $(SOURCES) $(EXECUTABLE)  fibonacci_cached_prof fibonacci_recalc_prof
 	
 $(EXECUTABLE): $(OBJECTS) 
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
@@ -15,10 +22,10 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm $(EXECUTABLE) *.o
+	rm $(EXECUTABLE) *.o fibonacci_cached_prof fibonacci_recalc_prof
 
-main_cached: $(OBJECTS)
-	$(CC) $(LDFLAGS) fibonacci_main_cached.o fibonacci.o -o $@
+fibonacci_cached_prof: $(OBJECTS) fibonacci_cached_prof.o
+	$(CC) $(LDFLAGS) fibonacci_cached_prof.o fibonacci.o -o $@
 
-main_recalc: $(OBJECTS)
-	$(CC) $(LDFLAGS) fibonacci_main_recalc.o fibonacci.o -o $@
+fibonacci_recalc_prof: $(OBJECTS) fibonacci_recalc_prof.o
+	$(CC) $(LDFLAGS) fibonacci_recalc_prof.o fibonacci.o -o $@
