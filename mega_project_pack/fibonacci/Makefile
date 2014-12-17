@@ -1,6 +1,6 @@
 CC=ccache clang++
 CFLAGS=-c -Wall -std=c++14 -g -O0
-LDFLAGS=-lboost_system -lboost_unit_test_framework
+LDFLAGS=
 
 GPROF?=no
 
@@ -12,6 +12,9 @@ SOURCES=fibonacci.cpp fibonacci_unittest.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=fibonacci
 
+# Add boost dependency only to the actual tests
+$(EXECUTABLE): LDFLAGS+=-lboost_system -lboost_unit_test_framework
+
 all: $(SOURCES) $(EXECUTABLE)  fibonacci_cached_prof fibonacci_recalc_prof
 	
 $(EXECUTABLE): $(OBJECTS) 
@@ -22,10 +25,26 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm $(EXECUTABLE) *.o fibonacci_cached_prof fibonacci_recalc_prof
+	rm $(EXECUTABLE) *.o fibonacci_cached_prof fibonacci_recalc_prof callgrind* gmon* fibonacci_profile_*
 
-fibonacci_cached_prof: $(OBJECTS) fibonacci_cached_prof.o
-	$(CC) $(LDFLAGS) fibonacci_cached_prof.o fibonacci.o -o $@
+fibonacci_cached_prof: fibonacci.o fibonacci_cached_prof.o
+	$(CC) $(LDFLAGS) $^ -o $@
+ifeq ($(GPROF),yes)
+	./$@
+	mv gmon.out gmon.cached
+	gprof $@ gmon.cached > ./fibonacci_profile_cached
+else
+	valgrind --tool=callgrind ./$@
+	mv ./callgrind.out.* callgrind.prof.cached
+endif
 
-fibonacci_recalc_prof: $(OBJECTS) fibonacci_recalc_prof.o
-	$(CC) $(LDFLAGS) fibonacci_recalc_prof.o fibonacci.o -o $@
+fibonacci_recalc_prof: fibonacci.o fibonacci_recalc_prof.o
+	$(CC) $(LDFLAGS) $^ -o $@
+ifeq ($(GPROF),yes)
+	./$@
+	mv gmon.out gmon.recalc
+	gprof $@ gmon.recalc > ./fibonacci_profile_recalc
+else
+	valgrind --tool=callgrind ./$@
+	mv ./callgrind.out.* callgrind.prof.recalc
+endif
