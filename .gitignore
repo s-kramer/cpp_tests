@@ -1,6 +1,7 @@
-*
 !*.c
 !*.cc
-!*.h
 !*.cpp
+!*.h
+!*.hpp
 !Makefile
+*
