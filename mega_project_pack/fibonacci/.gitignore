@@ -1,7 +1,0 @@
-!*.cpp
-!Makefile
-!*.h
-*.o
-fibonacci
-fibonacci_recalc_prof
-fibonacci_cached_prof
