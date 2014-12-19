@@ -15,12 +15,6 @@
 
 /*
 !/.
-/./*
-!/./*.cpp
-!/./*.hpp
-!/./*.c
-!/./*.h
-!/./Makefile
 !/mega_project_pack
 /mega_project_pack/*
 !/mega_project_pack/*
@@ -30,4 +24,10 @@
 !/mega_project_pack/*/*.c
 !/mega_project_pack/*/*.h
 !/mega_project_pack/*/Makefile
+!/Makefile
+!/*.cpp
+!/*.hpp
+!/*.c
+!/*.h
+!/README
 !.gitignore
