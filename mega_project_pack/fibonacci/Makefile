@@ -1,4 +1,4 @@
-CC=ccache clang++
+CC=clang++
 CFLAGS=-c -Wall -std=c++14 -g -O0
 LDFLAGS=
 
