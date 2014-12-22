@@ -21,6 +21,8 @@ private:
 
 int main()
 {
+    // A tepmlate parameter must be provided explicitly for 
+    // class template arguments
     // Foo f;
     Bar b;
     return 0;
