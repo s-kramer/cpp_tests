@@ -1,4 +1,6 @@
-#include "fibonacci.h"
+#include <fibonacci.h>
+#include <stdexcept>
+#include <vector>
 #include <algorithm>
 
 int getNthFibonacci(int step, bool recalculate)
