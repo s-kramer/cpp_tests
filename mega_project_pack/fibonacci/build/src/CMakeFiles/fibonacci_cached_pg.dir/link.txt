@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Werror     -pg CMakeFiles/fibonacci_cached_pg.dir/fibonacci_cached_prof.cpp.o  -o ../../bin/fibonacci_cached_pg -rdynamic fibonacci_lib/libfibonacci_lib.so -Wl,-rpath,/home/skramer/c_test/mega_project_pack/fibonacci/build/src/fibonacci_lib 

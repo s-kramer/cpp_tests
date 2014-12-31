@@ -1,0 +1,2 @@
+add_boost_test(fibonacci_unittest fibonacci_unittest.cpp)
+target_link_libraries(fibonacci_unittest fibonacci_lib)

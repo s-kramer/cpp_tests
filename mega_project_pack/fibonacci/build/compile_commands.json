@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/src",
+  "command": "/usr/bin/c++    -Wall -Wextra -Werror -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11 -o CMakeFiles/fibonacci_cached.dir/fibonacci_cached_prof.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_cached_prof.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_cached_prof.cpp"
+},
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/src",
+  "command": "/usr/bin/c++    -Wall -Wextra -Werror -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11  -pg -o CMakeFiles/fibonacci_cached_pg.dir/fibonacci_cached_prof.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_cached_prof.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_cached_prof.cpp"
+},
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/src",
+  "command": "/usr/bin/c++    -Wall -Wextra -Werror -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11 -o CMakeFiles/fibonacci_main.dir/main.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/src/main.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/src/main.cpp"
+},
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/src",
+  "command": "/usr/bin/c++    -Wall -Wextra -Werror -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11 -o CMakeFiles/fibonacci_recalc.dir/fibonacci_recalc_prof.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_recalc_prof.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_recalc_prof.cpp"
+},
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/src",
+  "command": "/usr/bin/c++    -Wall -Wextra -Werror -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11  -pg -o CMakeFiles/fibonacci_recalc_pg.dir/fibonacci_recalc_prof.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_recalc_prof.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_recalc_prof.cpp"
+},
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/src/fibonacci_lib",
+  "command": "/usr/bin/c++   -Dfibonacci_lib_EXPORTS -Wall -Wextra -Werror -fPIC -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11 -o CMakeFiles/fibonacci_lib.dir/fibonacci.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_lib/fibonacci.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/src/fibonacci_lib/fibonacci.cpp"
+},
+{
+  "directory": "/home/skramer/c_test/mega_project_pack/fibonacci/build/unittest",
+  "command": "/usr/bin/c++    -Wall -Wextra -Werror -I/home/skramer/c_test/mega_project_pack/fibonacci/include    -std=c++11 -o CMakeFiles/fibonacci_unittest.dir/fibonacci_unittest.cpp.o -c /home/skramer/c_test/mega_project_pack/fibonacci/unittest/fibonacci_unittest.cpp",
+  "file": "/home/skramer/c_test/mega_project_pack/fibonacci/unittest/fibonacci_unittest.cpp"
+}
+]

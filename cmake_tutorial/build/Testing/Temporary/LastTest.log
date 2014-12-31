@@ -1,0 +1,19 @@
+Start testing: Dec 20 16:53 CET
+----------------------------------------------------------
+1/1 Testing: ToDoTest
+1/1 Test: ToDoTest
+Command: "/home/skramer/c_test/cmake_tutorial/build/ToDo"
+Directory: /home/skramer/c_test/cmake_tutorial/build
+"ToDoTest" start time: Dec 20 16:53 CET
+Output:
+----------------------------------------------------------
+Test passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ToDoTest" end time: Dec 20 16:53 CET
+"ToDoTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 20 16:53 CET

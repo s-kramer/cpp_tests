@@ -1,0 +1,7 @@
+/home/skramer/c_test/mega_project_pack/fibonacci/build/src/CMakeFiles/fibonacci_cached.dir
+/home/skramer/c_test/mega_project_pack/fibonacci/build/src/CMakeFiles/fibonacci_cached_pg.dir
+/home/skramer/c_test/mega_project_pack/fibonacci/build/src/fibonacci_lib/CMakeFiles/fibonacci_lib.dir
+/home/skramer/c_test/mega_project_pack/fibonacci/build/src/CMakeFiles/fibonacci_main.dir
+/home/skramer/c_test/mega_project_pack/fibonacci/build/src/CMakeFiles/fibonacci_recalc.dir
+/home/skramer/c_test/mega_project_pack/fibonacci/build/src/CMakeFiles/fibonacci_recalc_pg.dir
+/home/skramer/c_test/mega_project_pack/fibonacci/build/unittest/CMakeFiles/fibonacci_unittest.dir

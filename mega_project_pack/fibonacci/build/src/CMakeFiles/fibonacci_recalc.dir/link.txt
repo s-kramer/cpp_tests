@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Werror    CMakeFiles/fibonacci_recalc.dir/fibonacci_recalc_prof.cpp.o  -o ../../bin/fibonacci_recalc -rdynamic fibonacci_lib/libfibonacci_lib.so -Wl,-rpath,/home/skramer/c_test/mega_project_pack/fibonacci/build/src/fibonacci_lib 

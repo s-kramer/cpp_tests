@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Werror    CMakeFiles/ToDo.dir/main.cpp.o CMakeFiles/ToDo.dir/ToDo.cpp.o  -o ToDo -rdynamic 

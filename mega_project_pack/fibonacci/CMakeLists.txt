@@ -1,65 +1,55 @@
 cmake_minimum_required(VERSION 2.6)
 project(fibonacci)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR}/include)
+enable_testing()
 
 add_definitions(-std=c++11)
 set(warnings "-Wall -Wextra -Werror")
 set(CMAKE_CXX_FLAGS "${warnings}")
 
-# add_subdirectory(src/fibonacci_lib)
-
-# Main application
-add_executable(fibonacci
-                src/main.cpp 
-                ./src/fibonacci_lib/fibonacci.cpp
-                )
-# target_link_libraries(fibonacci fibonacci_lib)
-
-# Profiled solution #1 for valgrind
-add_executable(fibonacci_recalc 
-                ./src/fibonacci_recalc_prof.cpp 
-                ./src/fibonacci_lib/fibonacci.cpp
-                )
-# target_link_libraries(fibonacci_recalc fibonacci_lib)
-
-# Profiled solution #2 for valgrind
-add_executable(fibonacci_cached 
-                ./src/fibonacci_cached_prof.cpp 
-                ./src/fibonacci_lib/fibonacci.cpp
-                )
-# target_link_libraries(fibonacci_cached fibonacci_lib)
-
-# Profiled solution #1 for gprof
-add_executable(fibonacci_recalc_pg 
-                ./src/fibonacci_recalc_prof.cpp 
-                ./src/fibonacci_lib/fibonacci.cpp
-                )
-# target_link_libraries(fibonacci_recalc_pg fibonacci_lib)
-
-# Profiled solution #2 for gprof
-add_executable(fibonacci_cached_pg
-                ./src/fibonacci_cached_prof.cpp 
-                ./src/fibonacci_lib/fibonacci.cpp
-                )
-# target_link_libraries(fibonacci_cached_pg fibonacci_lib)
+set(EXECUTABLE_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/bin/")
 
 set(GPROF_FLAG "-pg")
-get_target_property(TEMP fibonacci_cached_pg COMPILE_FLAGS)
-if(TEMP STREQUAL "TEMP-NOTFOUND")
-  SET(TEMP "") # set to empty string
-else()
-  SET(TEMP "${TEMP} ") # a space to cleanly separate from existing content
-endif()
-# append our values
-SET(TEMP "${TEMP}${GPROF_FLAG}")
-set_target_properties(fibonacci_cached_pg fibonacci_recalc_pg PROPERTIES COMPILE_FLAGS "${TEMP}")
 
-get_target_property(TEMP fibonacci_cached_pg LINK_FLAGS)
-if(TEMP STREQUAL "TEMP-NOTFOUND")
-  SET(TEMP "") # set to empty string
-else()
-  SET(TEMP "${TEMP} ") # a space to cleanly separate from existing content
-endif()
-# append our values
-SET(TEMP "${TEMP}${GPROF_FLAG}")
-set_target_properties(fibonacci_cached_pg fibonacci_recalc_pg PROPERTIES LINK_FLAGS "${TEMP}")
+function(add_boost_test target)
+    add_executable(${target} ${ARGN})
+    target_link_libraries(${target} boost_unit_test_framework)
+    add_test(${target} ${EXECUTABLE_OUTPUT_PATH}/${target})
+
+    add_custom_command(TARGET ${target}
+                       POST_BUILD
+                       COMMAND ${target}
+                       WORKING_DIRECTORY ${EXECUTABLE_OUTPUT_PATH}
+                       COMMENT "Running ${target}" VERBATIM)
+
+endfunction()
+
+function(add_gprof_lib target)
+    get_target_property(TEMP ${target} LINK_FLAGS)
+    if(TEMP STREQUAL "TEMP-NOTFOUND")
+        SET(TEMP "") # set to empty string
+    endif()
+    SET(TEMP "${TEMP} ${GPROF_FLAG}")
+    set_target_properties(${target} PROPERTIES LINK_FLAGS "${TEMP}")
+
+    get_target_property(TEMP ${target} COMPILE_FLAGS)
+    if(TEMP STREQUAL "TEMP-NOTFOUND")
+        SET(TEMP "") # set to empty string
+    endif()
+    SET(TEMP "${TEMP} ${GPROF_FLAG}")
+    set_target_properties(${target} PROPERTIES COMPILE_FLAGS "${TEMP}")
+
+    # Profiling triggering
+    add_custom_command(TARGET ${target}
+                       POST_BUILD
+                       COMMAND ${target}
+                       COMMAND mv gmon.out "gmon.${target}"
+                       COMMAND gprof -F getNthFibonacci ${target} "gmon.${target}" > "${target}_profile"
+                       COMMAND rm "gmon.${target}"
+                       WORKING_DIRECTORY ${EXECUTABLE_OUTPUT_PATH}
+                       COMMENT "Running ${target}" VERBATIM)
+endfunction()
+
+add_subdirectory(src)
+add_subdirectory(src/fibonacci_lib)
+add_subdirectory(unittest)
