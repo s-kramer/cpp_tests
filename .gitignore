@@ -219,3 +219,6 @@ unittest_tests/v2/build/CMakeFiles/3.0.2/CMakeDetermineCompilerABI_CXX.bin
 unittest_tests/v2/build/CMakeFiles/3.0.2/CompilerIdC/a.out
 unittest_tests/v2/build/CMakeFiles/3.0.2/CompilerIdCXX/a.out
 unittest_tests/v2/build/soundex_test
+
+unittest_tests/v1/build/*
+unittest_tests/v2/build/*
