@@ -207,3 +207,15 @@ t89_ycm_with_templates
 t90_std_regex
 t98_passing_poly_by_ref
 .test_02.cpp.swp.gz
+t100
+t99_boost_test_suite_fixture_creation
+unittest_tests/v1/build/CMakeFiles/3.0.2/CMakeDetermineCompilerABI_C.bin
+unittest_tests/v1/build/CMakeFiles/3.0.2/CMakeDetermineCompilerABI_CXX.bin
+unittest_tests/v1/build/CMakeFiles/3.0.2/CompilerIdC/a.out
+unittest_tests/v1/build/CMakeFiles/3.0.2/CompilerIdCXX/a.out
+unittest_tests/v1/build/soundex_test
+unittest_tests/v2/build/CMakeFiles/3.0.2/CMakeDetermineCompilerABI_C.bin
+unittest_tests/v2/build/CMakeFiles/3.0.2/CMakeDetermineCompilerABI_CXX.bin
+unittest_tests/v2/build/CMakeFiles/3.0.2/CompilerIdC/a.out
+unittest_tests/v2/build/CMakeFiles/3.0.2/CompilerIdCXX/a.out
+unittest_tests/v2/build/soundex_test
