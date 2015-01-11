@@ -1,0 +1,13 @@
+---
+variable: { casing: CamelCase }
+namespace: { casing: UPPER_CASE }
+parameter: { casing: camelBack }
+global_constant: { casing: UPPER_CASE }
+local_constant: { casing: lower_case }
+struct: { casing: CamelCase }
+typedef: { casing: lower_case, suffix: _t }
+method: { casing: camelBack }
+member: { casing: CamelCase, prefix: m }
+pod: { casing: CamelCase }
+...
+

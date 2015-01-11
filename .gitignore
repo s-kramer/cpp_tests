@@ -222,3 +222,4 @@ unittest_tests/v2/build/soundex_test
 
 unittest_tests/v1/build/*
 unittest_tests/v2/build/*
+unittest_tests/v2/scan-build/*
