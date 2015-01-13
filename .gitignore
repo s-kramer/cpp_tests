@@ -1,5 +1,6 @@
 .git
 .gitignore
+*.o
 boost_asio/Version.txt
 boost_test/t0001
 boost_test/t0002
@@ -223,3 +224,13 @@ unittest_tests/v2/build/soundex_test
 unittest_tests/v1/build/*
 unittest_tests/v2/build/*
 unittest_tests/v2/scan-build/*
+mega_project_pack/fibonacci/fibonacci
+mega_project_pack/fibonacci/fibonacci_cached_prof
+mega_project_pack/fibonacci/fibonacci_recalc_prof
+t100_rand
+t91_it_to_vectors_reserved_part
+t92_bind_to_mem_fcn
+t93_local_guard_with_boost_fcn
+t94_call_member_function_at_rvalue
+t95_class_template_arg_deduction
+t96_system_call_block
