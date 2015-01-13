@@ -25,19 +25,29 @@ target_link_libraries(soundex_test_sanitize_address boost_unit_test_framework)
 # add_test(soundex_test_sanitize_memory soundex_test_sanitize_memory)
 # target_link_libraries(soundex_test_sanitize_memory boost_unit_test_framework)
 
-add_executable(soundex_test_sanitize_undefined EXCLUDE_FROM_ALL Soundex.h Soundex.cpp soundex_unittest.cpp)
-add_test(soundex_test_sanitize_undefined soundex_test_sanitize_undefined)
-target_link_libraries(soundex_test_sanitize_undefined boost_unit_test_framework)
+# add_executable(soundex_test_sanitize_undefined EXCLUDE_FROM_ALL Soundex.h Soundex.cpp soundex_unittest.cpp)
+# add_test(soundex_test_sanitize_undefined soundex_test_sanitize_undefined)
+# target_link_libraries(soundex_test_sanitize_undefined boost_unit_test_framework)
 
-set_property(TARGET soundex_test_sanitize_address APPEND PROPERTY COMPILE_FLAGS "-fsanitize=address")
 # set_property(TARGET soundex_test_sanitize_memory APPEND PROPERTY COMPILE_FLAGS "-fsanitize=memory")
-set_property(TARGET soundex_test_sanitize_undefined APPEND PROPERTY COMPILE_FLAGS "-fsanitize=undefined")
+# set_property(TARGET soundex_test_sanitize_undefined APPEND PROPERTY COMPILE_FLAGS "-fsanitize=undefined")
 
 add_custom_target( clang-tests 
-    COMMAND soundex_test_sanitize_address
+    # COMMAND soundex_test_sanitize_address
+    COMMAND set_property(SOURCE soundex_test_sanitize_address.cpp APPEND_STRING PROPERTY COMPILE_FLAGS "-fsanitize=address")
+
     # COMMAND soundex_test_sanitize_memory
-    COMMAND soundex_test_sanitize_undefined
+    # COMMAND soundex_test_sanitize_undefined
     VERBATIM)
 
 # cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug ..
 # scan-build -v cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug ..
+# 
+#
+# Apply the set_target_properties command to the projects and not to the source files:
+
+# add_executable(project1 myfile.cpp)
+# set_target_properties(project1 PROPERTIES COMPILE_FLAGS "flags1")
+# add_executable(project2 myfile.cpp)
+# set_target_properties(project2 PROPERTIES COMPILE_FLAGS "flags2")
+# #
