@@ -9,6 +9,9 @@ set(CMAKE_CXX_FLAGS "${warnings}")
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
 
+set(soundex_source_files_list soundex_unittest.cpp Soundex.cpp)
+LIST(GET soundex_source_files_list 0 soundex_source_files)
+
 add_executable(soundex_test Soundex.h Soundex.cpp soundex_unittest.cpp)
 add_test(soundex_test soundex_test)
 target_link_libraries(soundex_test boost_unit_test_framework)
