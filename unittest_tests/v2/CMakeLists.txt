@@ -5,8 +5,8 @@ enable_testing()
 add_definitions(-std=c++14)
 set(warnings "-Wall -Wextra -Werror")
 set(CMAKE_CXX_FLAGS "${warnings}")
-set(CMAKE_C_COMPILER clang)
-set(CMAKE_CXX_COMPILER clang++)
+# set(CMAKE_C_COMPILER clang)
+# set(CMAKE_CXX_COMPILER clang++)
 
 set (soundex_filenames Soundex.cpp soundex_unittest.cpp)
 

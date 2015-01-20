@@ -14,7 +14,6 @@ std::string Soundex::encode(const std::string& word) const
         throw std::invalid_argument("Empty word provided");
     }
 
-
     auto encodedHead = encodeHead(head(word));
     auto encodedTail = encodeTail(tail(word));
     return padd(encodedHead + encodedTail);
