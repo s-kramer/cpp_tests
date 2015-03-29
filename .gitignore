@@ -234,3 +234,5 @@ t93_local_guard_with_boost_fcn
 t94_call_member_function_at_rvalue
 t95_class_template_arg_deduction
 t96_system_call_block
+t101_boost_regex_cmatch
+t103_observer_pattern
