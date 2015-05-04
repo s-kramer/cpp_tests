@@ -236,3 +236,8 @@ t95_class_template_arg_deduction
 t96_system_call_block
 t101_boost_regex_cmatch
 t103_observer_pattern
+boost_log/t0001
+boost_log/t0002
+boost_serialize/t0001
+t104_throw_expression
+t105_virtual_function_accessibility
